@@ -1,0 +1,367 @@
+Nome:"GNU node 431 myri"
+2 processos
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[22014,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+4 processos
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+8 processos
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+12 processos
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[21570,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[21580,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[21630,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[21608,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No available pml components were found!
+
+This means that there are no components of this type installed on your
+system or all the components reported that they could not be used.
+
+This is a fatal error; your MPI process is likely to abort.  Check the
+output of the "ompi_info" command and ensure that components of this
+type are available on your system.  You may also wish to check the
+value of the "component_path" MCA parameter and ensure that it has at
+least one directory that contains valid MCA components.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[21658,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------

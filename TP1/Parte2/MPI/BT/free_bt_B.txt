@@ -1,0 +1,45 @@
+             total       used       free     shared    buffers     cached
+Mem:         64522       1774      62748          0        247        641
+-/+ buffers/cache:        885      63636
+Swap:          999         11        988
+
+             total       used       free     shared    buffers     cached
+Mem:         64522       2302      62219          0        247        714
+-/+ buffers/cache:       1340      63182
+Swap:          999         11        988
+
+             total       used       free     shared    buffers     cached
+Mem:         64522       2328      62194          0        247        716
+-/+ buffers/cache:       1364      63158
+Swap:          999         11        988
+
+             total       used       free     shared    buffers     cached
+Mem:         64522       2339      62182          0        247        716
+-/+ buffers/cache:       1375      63146
+Swap:          999         11        988
+
+             total       used       free     shared    buffers     cached
+Mem:         64522       2346      62176          0        247        716
+-/+ buffers/cache:       1381      63140
+Swap:          999         11        988
+
+             total       used       free     shared    buffers     cached
+Mem:         64522       2350      62171          0        247        717
+-/+ buffers/cache:       1385      63136
+Swap:          999         11        988
+
+             total       used       free     shared    buffers     cached
+Mem:         64522       2355      62166          0        247        717
+-/+ buffers/cache:       1390      63131
+Swap:          999         11        988
+
+             total       used       free     shared    buffers     cached
+Mem:         64522       2355      62167          0        247        717
+-/+ buffers/cache:       1390      63132
+Swap:          999         11        988
+
+             total       used       free     shared    buffers     cached
+Mem:         64522       2355      62166          0        247        717
+-/+ buffers/cache:       1390      63131
+Swap:          999         11        988
+

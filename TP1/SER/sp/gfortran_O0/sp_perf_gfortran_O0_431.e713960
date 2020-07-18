@@ -1,0 +1,85 @@
+
+ Performance counter stats for './bin/sp-mz.B.x':
+
+     912628.840141      task-clock (msec)         #    0.999 CPUs utilized          
+             92417      context-switches          #    0.101 K/sec                  
+                 1      cpu-migrations            #    0.000 K/sec                  
+               874      page-faults               #    0.001 K/sec                  
+     2660976695056      cycles                    #    2.916 GHz                     [83.34%]
+      151334578907      stalled-cycles-frontend   #    5.69% frontend cycles idle    [83.33%]
+      121220502753      stalled-cycles-backend    #    4.56% backend  cycles idle    [66.67%]
+     6461274706646      instructions              #    2.43  insns per cycle        
+                                                  #    0.02  stalled cycles per insn [83.33%]
+       76507975741      branches                  #   83.833 M/sec                   [83.34%]
+         364988849      branch-misses             #    0.48% of all branches         [83.33%]
+
+     913.753797278 seconds time elapsed
+
+
+ Performance counter stats for './bin/sp-mz.B.x':
+
+     915683.828176      task-clock (msec)         #    0.999 CPUs utilized          
+             92766      context-switches          #    0.101 K/sec                  
+                 4      cpu-migrations            #    0.000 K/sec                  
+               873      page-faults               #    0.001 K/sec                  
+     2669517115662      cycles                    #    2.915 GHz                     [83.33%]
+      159215351408      stalled-cycles-frontend   #    5.96% frontend cycles idle    [83.34%]
+       96568641024      stalled-cycles-backend    #    3.62% backend  cycles idle    [66.67%]
+     6465619254889      instructions              #    2.42  insns per cycle        
+                                                  #    0.02  stalled cycles per insn [83.34%]
+       76462468282      branches                  #   83.503 M/sec                   [83.32%]
+         355105205      branch-misses             #    0.46% of all branches         [83.34%]
+
+     916.795971597 seconds time elapsed
+
+
+ Performance counter stats for './bin/sp-mz.B.x':
+
+     913669.159166      task-clock (msec)         #    0.999 CPUs utilized          
+             92537      context-switches          #    0.101 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               874      page-faults               #    0.001 K/sec                  
+     2664226515633      cycles                    #    2.916 GHz                     [83.34%]
+      153557302985      stalled-cycles-frontend   #    5.76% frontend cycles idle    [83.33%]
+       87341127581      stalled-cycles-backend    #    3.28% backend  cycles idle    [66.67%]
+     6463724497351      instructions              #    2.43  insns per cycle        
+                                                  #    0.02  stalled cycles per insn [83.33%]
+       76437339413      branches                  #   83.660 M/sec                   [83.34%]
+         358392870      branch-misses             #    0.47% of all branches         [83.33%]
+
+     914.789644557 seconds time elapsed
+
+
+ Performance counter stats for './bin/sp-mz.B.x':
+
+     915531.124614      task-clock (msec)         #    0.999 CPUs utilized          
+             92737      context-switches          #    0.101 K/sec                  
+                 3      cpu-migrations            #    0.000 K/sec                  
+               873      page-faults               #    0.001 K/sec                  
+     2668913235296      cycles                    #    2.915 GHz                     [83.33%]
+      158998099660      stalled-cycles-frontend   #    5.96% frontend cycles idle    [83.34%]
+       92876117553      stalled-cycles-backend    #    3.48% backend  cycles idle    [66.67%]
+     6465197726271      instructions              #    2.42  insns per cycle        
+                                                  #    0.02  stalled cycles per insn [83.34%]
+       76447775208      branches                  #   83.501 M/sec                   [83.32%]
+         358971199      branch-misses             #    0.47% of all branches         [83.34%]
+
+     916.640731430 seconds time elapsed
+
+
+ Performance counter stats for './bin/sp-mz.B.x':
+
+     911842.422169      task-clock (msec)         #    0.999 CPUs utilized          
+             92342      context-switches          #    0.101 K/sec                  
+                 9      cpu-migrations            #    0.000 K/sec                  
+               874      page-faults               #    0.001 K/sec                  
+     2658691332282      cycles                    #    2.916 GHz                     [83.33%]
+      147731315469      stalled-cycles-frontend   #    5.56% frontend cycles idle    [83.34%]
+      308782144563      stalled-cycles-backend    #   11.61% backend  cycles idle    [66.67%]
+     6466549915013      instructions              #    2.43  insns per cycle        
+                                                  #    0.05  stalled cycles per insn [83.34%]
+       76434978345      branches                  #   83.825 M/sec                   [83.32%]
+         369790431      branch-misses             #    0.48% of all branches         [83.34%]
+
+     912.950100959 seconds time elapsed
+

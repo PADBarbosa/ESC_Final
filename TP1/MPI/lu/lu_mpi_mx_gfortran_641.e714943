@@ -1,0 +1,3 @@
+[compute-641-16.local:30141] MCW rank 0 bound to socket 0[core 0[hwt 0-1]]: [BB/../../../../../../..][../../../../../../../..]
+[compute-641-14.local:10147] MCW rank 1 bound to socket 0[core 0[hwt 0-1]]: [BB/../../../../../../..][../../../../../../../..]
+=>> PBS: job killed: walltime 7231 exceeded limit 7200

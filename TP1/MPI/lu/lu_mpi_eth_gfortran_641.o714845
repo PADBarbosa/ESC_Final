@@ -1,0 +1,27 @@
+Nome:"GNU node 641 eth"
+2 processos
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - LU-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   4 x   4
+ Iterations: 250    dt:   2.000000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:     64  ( 32.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220

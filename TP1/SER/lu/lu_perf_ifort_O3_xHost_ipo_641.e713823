@@ -1,0 +1,80 @@
+
+ Performance counter stats for './bin/lu-mz.B.x':
+
+     111512.334201      task-clock (msec)         #    0.997 CPUs utilized          
+             11271      context-switches          #    0.101 K/sec                  
+                 3      cpu-migrations            #    0.000 K/sec                  
+               783      page-faults               #    0.007 K/sec                  
+      377514680684      cycles                    #    3.385 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+      439800226676      instructions              #    1.16  insns per cycle        
+        5492568641      branches                  #   49.255 M/sec                  
+          21515082      branch-misses             #    0.39% of all branches        
+
+     111.810444788 seconds time elapsed
+
+
+ Performance counter stats for './bin/lu-mz.B.x':
+
+     112336.790599      task-clock (msec)         #    0.997 CPUs utilized          
+             11295      context-switches          #    0.101 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               783      page-faults               #    0.007 K/sec                  
+      379310341635      cycles                    #    3.377 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+      439799129739      instructions              #    1.16  insns per cycle        
+        5492394016      branches                  #   48.892 M/sec                  
+          20961737      branch-misses             #    0.38% of all branches        
+
+     112.637060165 seconds time elapsed
+
+
+ Performance counter stats for './bin/lu-mz.B.x':
+
+     112206.360607      task-clock (msec)         #    0.997 CPUs utilized          
+             11384      context-switches          #    0.101 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               783      page-faults               #    0.007 K/sec                  
+      379221666162      cycles                    #    3.380 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+      439802798210      instructions              #    1.16  insns per cycle        
+        5492984424      branches                  #   48.954 M/sec                  
+          20699438      branch-misses             #    0.38% of all branches        
+
+     112.500652479 seconds time elapsed
+
+
+ Performance counter stats for './bin/lu-mz.B.x':
+
+     113975.855300      task-clock (msec)         #    0.997 CPUs utilized          
+             11505      context-switches          #    0.101 K/sec                  
+                 2      cpu-migrations            #    0.000 K/sec                  
+               784      page-faults               #    0.007 K/sec                  
+      378499043781      cycles                    #    3.321 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+      439808876291      instructions              #    1.16  insns per cycle        
+        5494102107      branches                  #   48.204 M/sec                  
+          20967694      branch-misses             #    0.38% of all branches        
+
+     114.280757225 seconds time elapsed
+
+
+ Performance counter stats for './bin/lu-mz.B.x':
+
+     112575.649718      task-clock (msec)         #    0.997 CPUs utilized          
+             11429      context-switches          #    0.102 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               783      page-faults               #    0.007 K/sec                  
+      380349584215      cycles                    #    3.379 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+      439799452049      instructions              #    1.16  insns per cycle        
+        5492474170      branches                  #   48.789 M/sec                  
+          21040127      branch-misses             #    0.38% of all branches        
+
+     112.871918866 seconds time elapsed
+

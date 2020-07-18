@@ -1,0 +1,80 @@
+
+ Performance counter stats for './bin/sp-mz.B.x':
+
+      76056.068158      task-clock (msec)         #    0.996 CPUs utilized          
+              7717      context-switches          #    0.101 K/sec                  
+                 9      cpu-migrations            #    0.000 K/sec                  
+               779      page-faults               #    0.010 K/sec                  
+      250349354857      cycles                    #    3.292 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+      381384020650      instructions              #    1.52  insns per cycle        
+        9706548663      branches                  #  127.624 M/sec                  
+         104230853      branch-misses             #    1.07% of all branches        
+
+      76.366342459 seconds time elapsed
+
+
+ Performance counter stats for './bin/sp-mz.B.x':
+
+      73608.908227      task-clock (msec)         #    0.997 CPUs utilized          
+              7473      context-switches          #    0.102 K/sec                  
+                 3      cpu-migrations            #    0.000 K/sec                  
+               779      page-faults               #    0.011 K/sec                  
+      250124611854      cycles                    #    3.398 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+      381372202823      instructions              #    1.52  insns per cycle        
+        9704434817      branches                  #  131.838 M/sec                  
+         104002872      branch-misses             #    1.07% of all branches        
+
+      73.811051898 seconds time elapsed
+
+
+ Performance counter stats for './bin/sp-mz.B.x':
+
+      73350.130418      task-clock (msec)         #    0.997 CPUs utilized          
+              7445      context-switches          #    0.101 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               779      page-faults               #    0.011 K/sec                  
+      249626770101      cycles                    #    3.403 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+      381369351659      instructions              #    1.53  insns per cycle        
+        9703927169      branches                  #  132.296 M/sec                  
+         104016293      branch-misses             #    1.07% of all branches        
+
+      73.549522754 seconds time elapsed
+
+
+ Performance counter stats for './bin/sp-mz.B.x':
+
+      74368.186572      task-clock (msec)         #    0.996 CPUs utilized          
+              7549      context-switches          #    0.102 K/sec                  
+                 6      cpu-migrations            #    0.000 K/sec                  
+               779      page-faults               #    0.010 K/sec                  
+      248817440204      cycles                    #    3.346 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+      381375866426      instructions              #    1.53  insns per cycle        
+        9705068890      branches                  #  130.500 M/sec                  
+         103951894      branch-misses             #    1.07% of all branches        
+
+      74.645154894 seconds time elapsed
+
+
+ Performance counter stats for './bin/sp-mz.B.x':
+
+      73078.519191      task-clock (msec)         #    0.997 CPUs utilized          
+              7422      context-switches          #    0.102 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               779      page-faults               #    0.011 K/sec                  
+      248316934485      cycles                    #    3.398 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+      381370246884      instructions              #    1.54  insns per cycle        
+        9703984382      branches                  #  132.788 M/sec                  
+         103964252      branch-misses             #    1.07% of all branches        
+
+      73.277936115 seconds time elapsed
+

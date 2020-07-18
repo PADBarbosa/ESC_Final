@@ -1,0 +1,85 @@
+
+ Performance counter stats for './bin/lu-mz.B.x':
+
+     150324.321782      task-clock (msec)         #    0.999 CPUs utilized          
+             15251      context-switches          #    0.101 K/sec                  
+                 1      cpu-migrations            #    0.000 K/sec                  
+              1316      page-faults               #    0.009 K/sec                  
+      438269231178      cycles                    #    2.915 GHz                     [83.34%]
+      213498185877      stalled-cycles-frontend   #   48.71% frontend cycles idle    [83.32%]
+       79066305025      stalled-cycles-backend    #   18.04% backend  cycles idle    [66.67%]
+      719788356393      instructions              #    1.64  insns per cycle        
+                                                  #    0.30  stalled cycles per insn [83.33%]
+        5526364633      branches                  #   36.763 M/sec                   [83.34%]
+          33081561      branch-misses             #    0.60% of all branches         [83.32%]
+
+     150.532191697 seconds time elapsed
+
+
+ Performance counter stats for './bin/lu-mz.B.x':
+
+     150218.265154      task-clock (msec)         #    0.999 CPUs utilized          
+             15271      context-switches          #    0.102 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1315      page-faults               #    0.009 K/sec                  
+      437982238595      cycles                    #    2.916 GHz                     [83.34%]
+      213330661655      stalled-cycles-frontend   #   48.71% frontend cycles idle    [83.32%]
+       76607226269      stalled-cycles-backend    #   17.49% backend  cycles idle    [66.67%]
+      719664724336      instructions              #    1.64  insns per cycle        
+                                                  #    0.30  stalled cycles per insn [83.33%]
+        5530382486      branches                  #   36.816 M/sec                   [83.34%]
+          32569183      branch-misses             #    0.59% of all branches         [83.33%]
+
+     150.428595654 seconds time elapsed
+
+
+ Performance counter stats for './bin/lu-mz.B.x':
+
+     150248.640113      task-clock (msec)         #    0.999 CPUs utilized          
+             15288      context-switches          #    0.102 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1316      page-faults               #    0.009 K/sec                  
+      438004609354      cycles                    #    2.915 GHz                     [83.32%]
+      213464753219      stalled-cycles-frontend   #   48.74% frontend cycles idle    [83.34%]
+       75339645207      stalled-cycles-backend    #   17.20% backend  cycles idle    [66.67%]
+      719909592799      instructions              #    1.64  insns per cycle        
+                                                  #    0.30  stalled cycles per insn [83.34%]
+        5529801795      branches                  #   36.804 M/sec                   [83.32%]
+          32826422      branch-misses             #    0.59% of all branches         [83.34%]
+
+     150.458331756 seconds time elapsed
+
+
+ Performance counter stats for './bin/lu-mz.B.x':
+
+     150641.633137      task-clock (msec)         #    0.999 CPUs utilized          
+             15310      context-switches          #    0.102 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1314      page-faults               #    0.009 K/sec                  
+      439100184536      cycles                    #    2.915 GHz                     [83.32%]
+      214508034435      stalled-cycles-frontend   #   48.85% frontend cycles idle    [83.34%]
+       81363374165      stalled-cycles-backend    #   18.53% backend  cycles idle    [66.67%]
+      719813377364      instructions              #    1.64  insns per cycle        
+                                                  #    0.30  stalled cycles per insn [83.34%]
+        5533974258      branches                  #   36.736 M/sec                   [83.32%]
+          32994744      branch-misses             #    0.60% of all branches         [83.34%]
+
+     150.848155517 seconds time elapsed
+
+
+ Performance counter stats for './bin/lu-mz.B.x':
+
+     149937.822323      task-clock (msec)         #    0.999 CPUs utilized          
+             15250      context-switches          #    0.102 K/sec                  
+                 2      cpu-migrations            #    0.000 K/sec                  
+              1314      page-faults               #    0.009 K/sec                  
+      437004214613      cycles                    #    2.915 GHz                     [83.33%]
+      212400578127      stalled-cycles-frontend   #   48.60% frontend cycles idle    [83.34%]
+       75688884069      stalled-cycles-backend    #   17.32% backend  cycles idle    [66.67%]
+      720104291133      instructions              #    1.65  insns per cycle        
+                                                  #    0.29  stalled cycles per insn [83.34%]
+        5530350575      branches                  #   36.884 M/sec                   [83.32%]
+          32071203      branch-misses             #    0.58% of all branches         [83.34%]
+
+     150.147651534 seconds time elapsed
+

@@ -1,0 +1,498 @@
+rm -f core 
+rm -f *~ */core */*~ */*.o */npbparams.h */*.obj */*.exe
+rm -f sys/setparams sys/makesuite sys/setparams.h
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/SP-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/SP-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/sys'
+../sys/setparams sp-mz B
+ifort -c  -O3 -xHost -ipo sp.f
+ifort -c  -O3 -xHost -ipo initialize.f
+ifort -c  -O3 -xHost -ipo exact_solution.f
+ifort -c  -O3 -xHost -ipo exact_rhs.f
+ifort -c  -O3 -xHost -ipo set_constants.f
+ifort -c  -O3 -xHost -ipo adi.f
+ifort -c  -O3 -xHost -ipo rhs.f
+ifort -c  -O3 -xHost -ipo zone_setup.f
+ifort -c  -O3 -xHost -ipo x_solve.f
+ifort -c  -O3 -xHost -ipo ninvr.f
+ifort -c  -O3 -xHost -ipo y_solve.f
+ifort -c  -O3 -xHost -ipo pinvr.f
+ifort -c  -O3 -xHost -ipo exch_qbc.f
+ifort -c  -O3 -xHost -ipo z_solve.f
+ifort -c  -O3 -xHost -ipo tzetar.f
+ifort -c  -O3 -xHost -ipo add.f
+ifort -c  -O3 -xHost -ipo txinvr.f
+ifort -c  -O3 -xHost -ipo error.f
+ifort -c  -O3 -xHost -ipo verify.f
+cd ../common; ifort -c  -O3 -xHost -ipo print_results.f
+cd ../common; ifort -c  -O3 -xHost -ipo timers.f
+cd ../common; cc  -c  -O  -o wtime.o ../common/wtime.c
+ifort -O3 -xHost -o ../bin/sp-mz.B.x sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/LU-MZ'
+/bin/rm -f npbparams.h
+/bin/rm -f *.o *~
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/LU-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/sys'
+../sys/setparams lu-mz B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/LU-MZ'
+ifort -c  -O3 -xHost -ipo lu.f
+ifort -c  -O3 -xHost -ipo read_input.f
+ifort -c  -O3 -xHost -ipo setcoeff.f
+ifort -c  -O3 -xHost -ipo setbv.f
+ifort -c  -O3 -xHost -ipo exact.f
+ifort -c  -O3 -xHost -ipo setiv.f
+ifort -c  -O3 -xHost -ipo erhs.f
+ifort -c  -O3 -xHost -ipo ssor.f
+ifort -c  -O3 -xHost -ipo zone_setup.f
+ifort -c  -O3 -xHost -ipo exch_qbc.f
+ifort -c  -O3 -xHost -ipo rhs.f
+ifort -c  -O3 -xHost -ipo l2norm.f
+ifort -c  -O3 -xHost -ipo jacld.f
+ifort -c  -O3 -xHost -ipo blts.f
+ifort -c  -O3 -xHost -ipo jacu.f
+ifort -c  -O3 -xHost -ipo buts.f
+ifort -c  -O3 -xHost -ipo error.f
+ifort -c  -O3 -xHost -ipo pintgr.f
+ifort -c  -O3 -xHost -ipo verify.f
+ifort -O3 -xHost -o ../bin/lu-mz.B.x lu.o read_input.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o zone_setup.o exch_qbc.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/LU-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/BT-MZ'
+rm -f *.o *~ mputil*
+rm -f  npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/BT-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/sys'
+../sys/setparams bt-mz B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/BT-MZ'
+ifort -c  -O3 -xHost -ipo bt.f
+ifort -c  -O3 -xHost -ipo initialize.f
+ifort -c  -O3 -xHost -ipo exact_solution.f
+ifort -c  -O3 -xHost -ipo exact_rhs.f
+ifort -c  -O3 -xHost -ipo set_constants.f
+ifort -c  -O3 -xHost -ipo adi.f
+ifort -c  -O3 -xHost -ipo rhs.f
+ifort -c  -O3 -xHost -ipo zone_setup.f
+ifort -c  -O3 -xHost -ipo x_solve.f
+ifort -c  -O3 -xHost -ipo y_solve.f
+ifort -c  -O3 -xHost -ipo exch_qbc.f
+ifort -c  -O3 -xHost -ipo z_solve.f
+ifort -c  -O3 -xHost -ipo solve_subs.f
+ifort -c  -O3 -xHost -ipo add.f
+ifort -c  -O3 -xHost -ipo error.f
+ifort -c  -O3 -xHost -ipo verify.f
+ifort -O3 -xHost -o ../bin/bt-mz.B.x bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o   exch_qbc.o z_solve.o solve_subs.o add.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/BT-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/SP-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/SP-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/sys'
+../sys/setparams sp-mz A
+ifort -c  -O3 -xHost -ipo sp.f
+ifort -c  -O3 -xHost -ipo initialize.f
+ifort -c  -O3 -xHost -ipo exact_solution.f
+ifort -c  -O3 -xHost -ipo exact_rhs.f
+ifort -c  -O3 -xHost -ipo set_constants.f
+ifort -c  -O3 -xHost -ipo adi.f
+ifort -c  -O3 -xHost -ipo rhs.f
+ifort -c  -O3 -xHost -ipo zone_setup.f
+ifort -c  -O3 -xHost -ipo x_solve.f
+ifort -c  -O3 -xHost -ipo ninvr.f
+ifort -c  -O3 -xHost -ipo y_solve.f
+ifort -c  -O3 -xHost -ipo pinvr.f
+ifort -c  -O3 -xHost -ipo exch_qbc.f
+ifort -c  -O3 -xHost -ipo z_solve.f
+ifort -c  -O3 -xHost -ipo tzetar.f
+ifort -c  -O3 -xHost -ipo add.f
+ifort -c  -O3 -xHost -ipo txinvr.f
+ifort -c  -O3 -xHost -ipo error.f
+ifort -c  -O3 -xHost -ipo verify.f
+ifort -O3 -xHost -o ../bin/sp-mz.A.x sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/LU-MZ'
+/bin/rm -f npbparams.h
+/bin/rm -f *.o *~
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/LU-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/sys'
+../sys/setparams lu-mz A
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/LU-MZ'
+ifort -c  -O3 -xHost -ipo lu.f
+ifort -c  -O3 -xHost -ipo read_input.f
+ifort -c  -O3 -xHost -ipo setcoeff.f
+ifort -c  -O3 -xHost -ipo setbv.f
+ifort -c  -O3 -xHost -ipo exact.f
+ifort -c  -O3 -xHost -ipo setiv.f
+ifort -c  -O3 -xHost -ipo erhs.f
+ifort -c  -O3 -xHost -ipo ssor.f
+ifort -c  -O3 -xHost -ipo zone_setup.f
+ifort -c  -O3 -xHost -ipo exch_qbc.f
+ifort -c  -O3 -xHost -ipo rhs.f
+ifort -c  -O3 -xHost -ipo l2norm.f
+ifort -c  -O3 -xHost -ipo jacld.f
+ifort -c  -O3 -xHost -ipo blts.f
+ifort -c  -O3 -xHost -ipo jacu.f
+ifort -c  -O3 -xHost -ipo buts.f
+ifort -c  -O3 -xHost -ipo error.f
+ifort -c  -O3 -xHost -ipo pintgr.f
+ifort -c  -O3 -xHost -ipo verify.f
+ifort -O3 -xHost -o ../bin/lu-mz.A.x lu.o read_input.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o zone_setup.o exch_qbc.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/LU-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/BT-MZ'
+rm -f *.o *~ mputil*
+rm -f  npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/BT-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/sys'
+../sys/setparams bt-mz A
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/BT-MZ'
+ifort -c  -O3 -xHost -ipo bt.f
+ifort -c  -O3 -xHost -ipo initialize.f
+ifort -c  -O3 -xHost -ipo exact_solution.f
+ifort -c  -O3 -xHost -ipo exact_rhs.f
+ifort -c  -O3 -xHost -ipo set_constants.f
+ifort -c  -O3 -xHost -ipo adi.f
+ifort -c  -O3 -xHost -ipo rhs.f
+ifort -c  -O3 -xHost -ipo zone_setup.f
+ifort -c  -O3 -xHost -ipo x_solve.f
+ifort -c  -O3 -xHost -ipo y_solve.f
+ifort -c  -O3 -xHost -ipo exch_qbc.f
+ifort -c  -O3 -xHost -ipo z_solve.f
+ifort -c  -O3 -xHost -ipo solve_subs.f
+ifort -c  -O3 -xHost -ipo add.f
+ifort -c  -O3 -xHost -ipo error.f
+ifort -c  -O3 -xHost -ipo verify.f
+ifort -O3 -xHost -o ../bin/bt-mz.A.x bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o   exch_qbc.o z_solve.o solve_subs.o add.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/BT-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-xHost/BT-MZ'
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - BT Multi-Zone Serial Benchmark
+
+ Number of zones:   8 x   8
+ Iterations: 200    dt:   0.000300
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.4461388343844E+06 0.4461388343844E+06 0.3392215756869E-14
+           2 0.3799759138035E+05 0.3799759138035E+05 0.1012954094741E-12
+           3 0.8383296623970E+05 0.8383296623970E+05 0.3523719753530E-13
+           4 0.5301970201273E+05 0.5301970201273E+05 0.5900941829789E-13
+           5 0.3618106851311E+06 0.3618106851311E+06 0.2815378616075E-13
+ Comparison of RMS-norms of solution error
+           1 0.4496733567600E+05 0.4496733567600E+05 0.8478602818061E-13
+           2 0.3892068540524E+04 0.3892068540524E+04 0.7302468888839E-13
+           3 0.8763825844217E+04 0.8763825844217E+04 0.4919090090372E-13
+           4 0.5599040091792E+04 0.5599040091792E+04 0.8121880597946E-13
+           5 0.4082652045598E+05 0.4082652045598E+05 0.6362327328542E-13
+ Verification Successful
+
+
+ BT-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      200
+ Time in seconds =                   177.70
+ Mop/s total     =                  3383.23
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              11 Apr 2020
+
+ Compile options:
+    F77          = ifort
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -xHost -ipo
+    FLINKFLAGS   = -O3 -xHost
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - BT Multi-Zone Serial Benchmark
+
+ Number of zones:   8 x   8
+ Iterations: 200    dt:   0.000300
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.4461388343844E+06 0.4461388343844E+06 0.3392215756869E-14
+           2 0.3799759138035E+05 0.3799759138035E+05 0.1012954094741E-12
+           3 0.8383296623970E+05 0.8383296623970E+05 0.3523719753530E-13
+           4 0.5301970201273E+05 0.5301970201273E+05 0.5900941829789E-13
+           5 0.3618106851311E+06 0.3618106851311E+06 0.2815378616075E-13
+ Comparison of RMS-norms of solution error
+           1 0.4496733567600E+05 0.4496733567600E+05 0.8478602818061E-13
+           2 0.3892068540524E+04 0.3892068540524E+04 0.7302468888839E-13
+           3 0.8763825844217E+04 0.8763825844217E+04 0.4919090090372E-13
+           4 0.5599040091792E+04 0.5599040091792E+04 0.8121880597946E-13
+           5 0.4082652045598E+05 0.4082652045598E+05 0.6362327328542E-13
+ Verification Successful
+
+
+ BT-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      200
+ Time in seconds =                   178.53
+ Mop/s total     =                  3367.45
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              11 Apr 2020
+
+ Compile options:
+    F77          = ifort
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -xHost -ipo
+    FLINKFLAGS   = -O3 -xHost
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - BT Multi-Zone Serial Benchmark
+
+ Number of zones:   8 x   8
+ Iterations: 200    dt:   0.000300
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.4461388343844E+06 0.4461388343844E+06 0.3392215756869E-14
+           2 0.3799759138035E+05 0.3799759138035E+05 0.1012954094741E-12
+           3 0.8383296623970E+05 0.8383296623970E+05 0.3523719753530E-13
+           4 0.5301970201273E+05 0.5301970201273E+05 0.5900941829789E-13
+           5 0.3618106851311E+06 0.3618106851311E+06 0.2815378616075E-13
+ Comparison of RMS-norms of solution error
+           1 0.4496733567600E+05 0.4496733567600E+05 0.8478602818061E-13
+           2 0.3892068540524E+04 0.3892068540524E+04 0.7302468888839E-13
+           3 0.8763825844217E+04 0.8763825844217E+04 0.4919090090372E-13
+           4 0.5599040091792E+04 0.5599040091792E+04 0.8121880597946E-13
+           5 0.4082652045598E+05 0.4082652045598E+05 0.6362327328542E-13
+ Verification Successful
+
+
+ BT-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      200
+ Time in seconds =                   178.39
+ Mop/s total     =                  3370.23
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              11 Apr 2020
+
+ Compile options:
+    F77          = ifort
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -xHost -ipo
+    FLINKFLAGS   = -O3 -xHost
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - BT Multi-Zone Serial Benchmark
+
+ Number of zones:   8 x   8
+ Iterations: 200    dt:   0.000300
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.4461388343844E+06 0.4461388343844E+06 0.3392215756869E-14
+           2 0.3799759138035E+05 0.3799759138035E+05 0.1012954094741E-12
+           3 0.8383296623970E+05 0.8383296623970E+05 0.3523719753530E-13
+           4 0.5301970201273E+05 0.5301970201273E+05 0.5900941829789E-13
+           5 0.3618106851311E+06 0.3618106851311E+06 0.2815378616075E-13
+ Comparison of RMS-norms of solution error
+           1 0.4496733567600E+05 0.4496733567600E+05 0.8478602818061E-13
+           2 0.3892068540524E+04 0.3892068540524E+04 0.7302468888839E-13
+           3 0.8763825844217E+04 0.8763825844217E+04 0.4919090090372E-13
+           4 0.5599040091792E+04 0.5599040091792E+04 0.8121880597946E-13
+           5 0.4082652045598E+05 0.4082652045598E+05 0.6362327328542E-13
+ Verification Successful
+
+
+ BT-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      200
+ Time in seconds =                   176.90
+ Mop/s total     =                  3398.50
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              11 Apr 2020
+
+ Compile options:
+    F77          = ifort
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -xHost -ipo
+    FLINKFLAGS   = -O3 -xHost
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - BT Multi-Zone Serial Benchmark
+
+ Number of zones:   8 x   8
+ Iterations: 200    dt:   0.000300
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.4461388343844E+06 0.4461388343844E+06 0.3392215756869E-14
+           2 0.3799759138035E+05 0.3799759138035E+05 0.1012954094741E-12
+           3 0.8383296623970E+05 0.8383296623970E+05 0.3523719753530E-13
+           4 0.5301970201273E+05 0.5301970201273E+05 0.5900941829789E-13
+           5 0.3618106851311E+06 0.3618106851311E+06 0.2815378616075E-13
+ Comparison of RMS-norms of solution error
+           1 0.4496733567600E+05 0.4496733567600E+05 0.8478602818061E-13
+           2 0.3892068540524E+04 0.3892068540524E+04 0.7302468888839E-13
+           3 0.8763825844217E+04 0.8763825844217E+04 0.4919090090372E-13
+           4 0.5599040091792E+04 0.5599040091792E+04 0.8121880597946E-13
+           5 0.4082652045598E+05 0.4082652045598E+05 0.6362327328542E-13
+ Verification Successful
+
+
+ BT-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      200
+ Time in seconds =                   177.86
+ Mop/s total     =                  3380.13
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              11 Apr 2020
+
+ Compile options:
+    F77          = ifort
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -xHost -ipo
+    FLINKFLAGS   = -O3 -xHost
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

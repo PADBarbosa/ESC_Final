@@ -1,0 +1,1816 @@
+Nome:"Intel node 431 eth"
+
+2 processos
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       9220     compute-431-9.local  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}
+[0] MPI startup(): 1       19763    compute-431-7.local  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:     48  ( 24.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7341950389475E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9578975016145E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1242637876324E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3336244164441E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2363907730146E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    25.80
+ Total processes =                        2
+ Total threads   =                       48
+ Mop/s total     =                 11756.57
+ Mop/s/thread    =                   244.93
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       9325     compute-431-9.local  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}
+[0] MPI startup(): 1       19854    compute-431-7.local  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:     48  ( 24.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7341950389475E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9578975016145E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1242637876324E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3350501618136E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2365202312693E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    23.71
+ Total processes =                        2
+ Total threads   =                       48
+ Mop/s total     =                 12792.41
+ Mop/s/thread    =                   266.51
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       9431     compute-431-9.local  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}
+[0] MPI startup(): 1       19945    compute-431-7.local  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:     48  ( 24.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7341950389475E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9578975016145E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1242637876324E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3350501618136E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2365202312693E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    25.82
+ Total processes =                        2
+ Total threads   =                       48
+ Mop/s total     =                 11750.16
+ Mop/s/thread    =                   244.79
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       9536     compute-431-9.local  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}
+[0] MPI startup(): 1       20036    compute-431-7.local  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:     48  ( 24.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7341950389475E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9578975016145E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1242637876324E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3364759071830E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2365202312693E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    25.89
+ Total processes =                        2
+ Total threads   =                       48
+ Mop/s total     =                 11715.44
+ Mop/s/thread    =                   244.07
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       9641     compute-431-9.local  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}
+[0] MPI startup(): 1       20129    compute-431-7.local  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:     48  ( 24.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7341950389475E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9578975016145E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1242637876324E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3336244164441E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2365202312693E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    24.08
+ Total processes =                        2
+ Total threads   =                       48
+ Mop/s total     =                 12596.30
+ Mop/s/thread    =                   262.42
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+4 processos
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       9747     compute-431-9.local  {0,1,2,3,4,5,12,13,14,15,16,17}
+[0] MPI startup(): 1       9748     compute-431-9.local  {6,7,8,9,10,11,18,19,20,21,22,23}
+[0] MPI startup(): 2       20221    compute-431-7.local  {0,1,2,3,4,5,12,13,14,15,16,17}
+[0] MPI startup(): 3       20222    compute-431-7.local  {6,7,8,9,10,11,18,19,20,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     4
+
+ Use the default load factors with threads
+ Total number of threads:     48  ( 12.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7394518053361E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9610075584379E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1312540998577E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1242637876324E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3324512224613E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1822316249822E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    12.18
+ Total processes =                        4
+ Total threads   =                       48
+ Mop/s total     =                 24905.42
+ Mop/s/thread    =                   518.86
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       9852     compute-431-9.local  {0,1,2,3,4,5,12,13,14,15,16,17}
+[0] MPI startup(): 1       9853     compute-431-9.local  {6,7,8,9,10,11,18,19,20,21,22,23}
+[0] MPI startup(): 2       20312    compute-431-7.local  {0,1,2,3,4,5,12,13,14,15,16,17}
+[0] MPI startup(): 3       20313    compute-431-7.local  {6,7,8,9,10,11,18,19,20,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     4
+
+ Use the default load factors with threads
+ Total number of threads:     48  ( 12.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7394518053361E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9610075584379E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1312540998577E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1242637876324E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3324512224613E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1822316249822E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    18.53
+ Total processes =                        4
+ Total threads   =                       48
+ Mop/s total     =                 16375.11
+ Mop/s/thread    =                   341.15
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       9958     compute-431-9.local  {0,1,2,3,4,5,12,13,14,15,16,17}
+[0] MPI startup(): 1       9959     compute-431-9.local  {6,7,8,9,10,11,18,19,20,21,22,23}
+[0] MPI startup(): 2       20404    compute-431-7.local  {0,1,2,3,4,5,12,13,14,15,16,17}
+[0] MPI startup(): 3       20405    compute-431-7.local  {6,7,8,9,10,11,18,19,20,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     4
+
+ Use the default load factors with threads
+ Total number of threads:     48  ( 12.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7394518053361E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9594525300262E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1312540998577E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1242637876324E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3324512224613E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1824120523337E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    17.68
+ Total processes =                        4
+ Total threads   =                       48
+ Mop/s total     =                 17154.45
+ Mop/s/thread    =                   357.38
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       10063    compute-431-9.local  {0,1,2,3,4,5,12,13,14,15,16,17}
+[0] MPI startup(): 1       10064    compute-431-9.local  {6,7,8,9,10,11,18,19,20,21,22,23}
+[0] MPI startup(): 2       20495    compute-431-7.local  {0,1,2,3,4,5,12,13,14,15,16,17}
+[0] MPI startup(): 3       20496    compute-431-7.local  {6,7,8,9,10,11,18,19,20,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     4
+
+ Use the default load factors with threads
+ Total number of threads:     48  ( 12.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7394518053361E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9610075584379E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1312540998577E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1242637876324E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3324512224613E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1824120523337E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    17.80
+ Total processes =                        4
+ Total threads   =                       48
+ Mop/s total     =                 17044.50
+ Mop/s/thread    =                   355.09
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       10168    compute-431-9.local  {0,1,2,3,4,5,12,13,14,15,16,17}
+[0] MPI startup(): 1       10169    compute-431-9.local  {6,7,8,9,10,11,18,19,20,21,22,23}
+[0] MPI startup(): 2       20586    compute-431-7.local  {0,1,2,3,4,5,12,13,14,15,16,17}
+[0] MPI startup(): 3       20587    compute-431-7.local  {6,7,8,9,10,11,18,19,20,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     4
+
+ Use the default load factors with threads
+ Total number of threads:     48  ( 12.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7394518053361E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9610075584379E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1312540998577E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1242637876324E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3324512224613E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1822316249822E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    17.45
+ Total processes =                        4
+ Total threads   =                       48
+ Mop/s total     =                 17386.63
+ Mop/s/thread    =                   362.22
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+8 processos
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       10275    compute-431-9.local  {0,1,2,12,13,14}
+[0] MPI startup(): 1       10276    compute-431-9.local  {3,4,5,15,16,17}
+[0] MPI startup(): 2       10277    compute-431-9.local  {6,7,8,18,19,20}
+[0] MPI startup(): 3       10278    compute-431-9.local  {9,10,11,21,22,23}
+[0] MPI startup(): 4       20677    compute-431-7.local  {0,1,2,12,13,14}
+[0] MPI startup(): 5       20678    compute-431-7.local  {3,4,5,15,16,17}
+[0] MPI startup(): 6       20679    compute-431-7.local  {6,7,8,18,19,20}
+[0] MPI startup(): 7       20680    compute-431-7.local  {9,10,11,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     8
+
+ Use the default load factors with threads
+ Total number of threads:     48  (  6.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7412040607990E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9563424732028E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1308935116713E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2666206055095E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.6963580707162E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3326516150005E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1813294882249E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    13.47
+ Total processes =                        8
+ Total threads   =                       48
+ Mop/s total     =                 22514.32
+ Mop/s/thread    =                   469.05
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       10380    compute-431-9.local  {0,1,2,12,13,14}
+[0] MPI startup(): 1       10381    compute-431-9.local  {3,4,5,15,16,17}
+[0] MPI startup(): 2       10382    compute-431-9.local  {6,7,8,18,19,20}
+[0] MPI startup(): 3       10383    compute-431-9.local  {9,10,11,21,22,23}
+[0] MPI startup(): 4       20769    compute-431-7.local  {0,1,2,12,13,14}
+[0] MPI startup(): 5       20770    compute-431-7.local  {3,4,5,15,16,17}
+[0] MPI startup(): 6       20771    compute-431-7.local  {6,7,8,18,19,20}
+[0] MPI startup(): 7       20772    compute-431-7.local  {9,10,11,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     8
+
+ Use the default load factors with threads
+ Total number of threads:     48  (  6.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7412040607990E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9563424732028E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1308935116713E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2666206055095E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.6984367515243E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3326516150005E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1813294882249E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    10.31
+ Total processes =                        8
+ Total threads   =                       48
+ Mop/s total     =                 29424.93
+ Mop/s/thread    =                   613.02
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       10485    compute-431-9.local  {0,1,2,12,13,14}
+[0] MPI startup(): 1       10486    compute-431-9.local  {3,4,5,15,16,17}
+[0] MPI startup(): 2       10487    compute-431-9.local  {6,7,8,18,19,20}
+[0] MPI startup(): 3       10488    compute-431-9.local  {9,10,11,21,22,23}
+[0] MPI startup(): 4       20861    compute-431-7.local  {0,1,2,12,13,14}
+[0] MPI startup(): 5       20862    compute-431-7.local  {3,4,5,15,16,17}
+[0] MPI startup(): 6       20863    compute-431-7.local  {6,7,8,18,19,20}
+[0] MPI startup(): 7       20864    compute-431-7.local  {9,10,11,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     8
+
+ Use the default load factors with threads
+ Total number of threads:     48  (  6.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7412040607990E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9563424732028E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1308935116713E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2667340610863E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.6984367515243E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3326516150005E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1813294882249E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    13.07
+ Total processes =                        8
+ Total threads   =                       48
+ Mop/s total     =                 23218.48
+ Mop/s/thread    =                   483.72
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       10590    compute-431-9.local  {0,1,2,12,13,14}
+[0] MPI startup(): 1       10591    compute-431-9.local  {3,4,5,15,16,17}
+[0] MPI startup(): 2       10592    compute-431-9.local  {6,7,8,18,19,20}
+[0] MPI startup(): 3       10593    compute-431-9.local  {9,10,11,21,22,23}
+[0] MPI startup(): 4       20952    compute-431-7.local  {0,1,2,12,13,14}
+[0] MPI startup(): 5       20953    compute-431-7.local  {3,4,5,15,16,17}
+[0] MPI startup(): 6       20954    compute-431-7.local  {6,7,8,18,19,20}
+[0] MPI startup(): 7       20955    compute-431-7.local  {9,10,11,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     8
+
+ Use the default load factors with threads
+ Total number of threads:     48  (  6.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7412040607990E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9563424732028E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1308935116713E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2666206055095E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.6963580707162E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3326516150005E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1813294882249E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    11.63
+ Total processes =                        8
+ Total threads   =                       48
+ Mop/s total     =                 26085.55
+ Mop/s/thread    =                   543.45
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       10695    compute-431-9.local  {0,1,2,12,13,14}
+[0] MPI startup(): 1       10696    compute-431-9.local  {3,4,5,15,16,17}
+[0] MPI startup(): 2       10697    compute-431-9.local  {6,7,8,18,19,20}
+[0] MPI startup(): 3       10698    compute-431-9.local  {9,10,11,21,22,23}
+[0] MPI startup(): 4       21043    compute-431-7.local  {0,1,2,12,13,14}
+[0] MPI startup(): 5       21044    compute-431-7.local  {3,4,5,15,16,17}
+[0] MPI startup(): 6       21045    compute-431-7.local  {6,7,8,18,19,20}
+[0] MPI startup(): 7       21046    compute-431-7.local  {9,10,11,21,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     8
+
+ Use the default load factors with threads
+ Total number of threads:     48  (  6.0 threads/process)
+
+ Calculated speedup =     48.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7412040607990E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9563424732028E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1307132175781E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2666206055095E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.6984367515243E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3326516150005E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1813294882249E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    10.51
+ Total processes =                        8
+ Total threads   =                       48
+ Mop/s total     =                 28855.24
+ Mop/s/thread    =                   601.15
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+12 processos
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       10800    compute-431-9.local  {0,1,12,13}
+[0] MPI startup(): 1       10801    compute-431-9.local  {2,3,14,15}
+[0] MPI startup(): 2       10802    compute-431-9.local  {4,5,16,17}
+[0] MPI startup(): 3       10803    compute-431-9.local  {6,7,18,19}
+[0] MPI startup(): 4       10804    compute-431-9.local  {8,9,20,21}
+[0] MPI startup(): 5       10805    compute-431-9.local  {10,11,22,23}
+[0] MPI startup(): 6       21134    compute-431-7.local  {0,1,12,13}
+[0] MPI startup(): 7       21135    compute-431-7.local  {2,3,14,15}
+[0] MPI startup(): 8       21136    compute-431-7.local  {4,5,16,17}
+[0] MPI startup(): 9       21137    compute-431-7.local  {6,7,18,19}
+[0] MPI startup(): 10      21138    compute-431-7.local  {8,9,20,21}
+[0] MPI startup(): 11      21139    compute-431-7.local  {10,11,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:    12
+
+ Use the default load factors with threads
+ Total number of threads:     48  (  4.0 threads/process)
+
+ Calculated speedup =     42.67
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7429563162619E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1317949821373E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2673013389704E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1247709867656E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3407531432912E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3332527926180E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2367791477786E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    11.75
+ Total processes =                       12
+ Total threads   =                       48
+ Mop/s total     =                 25817.72
+ Mop/s/thread    =                   537.87
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       10906    compute-431-9.local  {0,1,12,13}
+[0] MPI startup(): 1       10907    compute-431-9.local  {2,3,14,15}
+[0] MPI startup(): 2       10908    compute-431-9.local  {4,5,16,17}
+[0] MPI startup(): 3       10909    compute-431-9.local  {6,7,18,19}
+[0] MPI startup(): 4       10910    compute-431-9.local  {8,9,20,21}
+[0] MPI startup(): 5       10911    compute-431-9.local  {10,11,22,23}
+[0] MPI startup(): 6       21226    compute-431-7.local  {0,1,12,13}
+[0] MPI startup(): 7       21227    compute-431-7.local  {2,3,14,15}
+[0] MPI startup(): 8       21228    compute-431-7.local  {4,5,16,17}
+[0] MPI startup(): 9       21229    compute-431-7.local  {6,7,18,19}
+[0] MPI startup(): 10      21230    compute-431-7.local  {8,9,20,21}
+[0] MPI startup(): 11      21231    compute-431-7.local  {10,11,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:    12
+
+ Use the default load factors with threads
+ Total number of threads:     48  (  4.0 threads/process)
+
+ Calculated speedup =     42.67
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7429563162619E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1317949821373E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2673013389704E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1247709867656E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3393273979218E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3332527926180E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2367791477786E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    11.20
+ Total processes =                       12
+ Total threads   =                       48
+ Mop/s total     =                 27076.38
+ Mop/s/thread    =                   564.09
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       11012    compute-431-9.local  {0,1,12,13}
+[0] MPI startup(): 1       11013    compute-431-9.local  {2,3,14,15}
+[0] MPI startup(): 2       11014    compute-431-9.local  {4,5,16,17}
+[0] MPI startup(): 3       11015    compute-431-9.local  {6,7,18,19}
+[0] MPI startup(): 4       11016    compute-431-9.local  {8,9,20,21}
+[0] MPI startup(): 5       11017    compute-431-9.local  {10,11,22,23}
+[0] MPI startup(): 6       21317    compute-431-7.local  {0,1,12,13}
+[0] MPI startup(): 7       21318    compute-431-7.local  {2,3,14,15}
+[0] MPI startup(): 8       21319    compute-431-7.local  {4,5,16,17}
+[0] MPI startup(): 9       21320    compute-431-7.local  {6,7,18,19}
+[0] MPI startup(): 10      21321    compute-431-7.local  {8,9,20,21}
+[0] MPI startup(): 11      21322    compute-431-7.local  {10,11,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:    12
+
+ Use the default load factors with threads
+ Total number of threads:     48  (  4.0 threads/process)
+
+ Calculated speedup =     42.67
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7429563162619E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1317949821373E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2673013389704E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1247709867656E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3407531432912E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3332527926180E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2367791477786E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    11.19
+ Total processes =                       12
+ Total threads   =                       48
+ Mop/s total     =                 27107.05
+ Mop/s/thread    =                   564.73
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       11117    compute-431-9.local  {0,1,12,13}
+[0] MPI startup(): 1       11118    compute-431-9.local  {2,3,14,15}
+[0] MPI startup(): 2       11119    compute-431-9.local  {4,5,16,17}
+[0] MPI startup(): 3       11120    compute-431-9.local  {6,7,18,19}
+[0] MPI startup(): 4       11121    compute-431-9.local  {8,9,20,21}
+[0] MPI startup(): 5       11122    compute-431-9.local  {10,11,22,23}
+[0] MPI startup(): 6       21408    compute-431-7.local  {0,1,12,13}
+[0] MPI startup(): 7       21409    compute-431-7.local  {2,3,14,15}
+[0] MPI startup(): 8       21410    compute-431-7.local  {4,5,16,17}
+[0] MPI startup(): 9       21411    compute-431-7.local  {6,7,18,19}
+[0] MPI startup(): 10      21412    compute-431-7.local  {8,9,20,21}
+[0] MPI startup(): 11      21413    compute-431-7.local  {10,11,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:    12
+
+ Use the default load factors with threads
+ Total number of threads:     48  (  4.0 threads/process)
+
+ Calculated speedup =     42.67
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7429563162619E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1317949821373E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2673013389704E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1247709867656E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3407531432912E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3332527926180E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2367791477786E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    11.46
+ Total processes =                       12
+ Total threads   =                       48
+ Mop/s total     =                 26465.73
+ Mop/s/thread    =                   551.37
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+[0] MPI startup(): libfabric version: 1.7.2a-impi
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Rank    Pid      Node name            Pin cpu
+[0] MPI startup(): 0       11222    compute-431-9.local  {0,1,12,13}
+[0] MPI startup(): 1       11223    compute-431-9.local  {2,3,14,15}
+[0] MPI startup(): 2       11224    compute-431-9.local  {4,5,16,17}
+[0] MPI startup(): 3       11225    compute-431-9.local  {6,7,18,19}
+[0] MPI startup(): 4       11226    compute-431-9.local  {8,9,20,21}
+[0] MPI startup(): 5       11227    compute-431-9.local  {10,11,22,23}
+[0] MPI startup(): 6       21499    compute-431-7.local  {0,1,12,13}
+[0] MPI startup(): 7       21500    compute-431-7.local  {2,3,14,15}
+[0] MPI startup(): 8       21501    compute-431-7.local  {4,5,16,17}
+[0] MPI startup(): 9       21502    compute-431-7.local  {6,7,18,19}
+[0] MPI startup(): 10      21503    compute-431-7.local  {8,9,20,21}
+[0] MPI startup(): 11      21504    compute-431-7.local  {10,11,22,23}
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:    12
+
+ Use the default load factors with threads
+ Total number of threads:     48  (  4.0 threads/process)
+
+ Calculated speedup =     42.67
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7429563162619E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1317949821373E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2673013389704E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1247709867656E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3407531432912E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3332527926180E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2367791477786E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    11.31
+ Total processes =                       12
+ Total threads   =                       48
+ Mop/s total     =                 26820.59
+ Mop/s/thread    =                   558.76
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Apr 2020
+
+ Compile options:
+    F77          = mpiifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -qopenmp
+    FLINKFLAGS   = -O3 -qopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

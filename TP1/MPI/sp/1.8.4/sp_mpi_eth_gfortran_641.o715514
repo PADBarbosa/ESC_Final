@@ -1,0 +1,2108 @@
+Nome:"GNU node 641 eth"
+
+rm -f core
+rm -f *~ */core */*~ */*.o */npbparams.h */*.obj */*.exe
+rm -f sys/setparams sys/makesuite sys/setparams.h
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams sp-mz 2 B
+mpifort -c  -O3 -fopenmp sp.f
+mpifort -c  -O3 -fopenmp initialize.f
+mpifort -c  -O3 -fopenmp exact_solution.f
+mpifort -c  -O3 -fopenmp exact_rhs.f
+mpifort -c  -O3 -fopenmp set_constants.f
+mpifort -c  -O3 -fopenmp adi.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp x_solve.f
+mpifort -c  -O3 -fopenmp ninvr.f
+mpifort -c  -O3 -fopenmp y_solve.f
+mpifort -c  -O3 -fopenmp pinvr.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp z_solve.f
+mpifort -c  -O3 -fopenmp tzetar.f
+mpifort -c  -O3 -fopenmp add.f
+mpifort -c  -O3 -fopenmp txinvr.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+cd ../common; mpifort -c  -O3 -fopenmp print_results.f
+cd ../common; mpifort -c  -O3 -fopenmp timers.f
+mpifort -O3 -fopenmp -o ../bin/sp-mz.B.2 sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o -lmpi
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams bt-mz 2 B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+mpifort -c  -O3 -fopenmp bt.f
+mpifort -c  -O3 -fopenmp initialize.f
+mpifort -c  -O3 -fopenmp exact_solution.f
+mpifort -c  -O3 -fopenmp exact_rhs.f
+mpifort -c  -O3 -fopenmp set_constants.f
+mpifort -c  -O3 -fopenmp adi.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp x_solve.f
+mpifort -c  -O3 -fopenmp y_solve.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp solve_subs.f
+mpifort -c  -O3 -fopenmp z_solve.f
+mpifort -c  -O3 -fopenmp add.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+mpifort -O3 -fopenmp -o ../bin/bt-mz.B.2 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+/bin/rm -f npbparams.h
+/bin/rm -f *.o *~
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams lu-mz 2 B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+mpifort -c  -O3 -fopenmp lu.f
+mpifort -c  -O3 -fopenmp read_input.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+mpifort -c  -O3 -fopenmp setcoeff.f
+mpifort -c  -O3 -fopenmp setbv.f
+mpifort -c  -O3 -fopenmp exact.f
+mpifort -c  -O3 -fopenmp setiv.f
+mpifort -c  -O3 -fopenmp erhs.f
+mpifort -c  -O3 -fopenmp ssor.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp l2norm.f
+mpifort -c  -O3 -fopenmp jacld.f
+mpifort -c  -O3 -fopenmp blts.f
+mpifort -c  -O3 -fopenmp jacu.f
+mpifort -c  -O3 -fopenmp buts.f
+mpifort -c  -O3 -fopenmp syncs.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp pintgr.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -O3 -fopenmp -o ../bin/lu-mz.B.2 lu.o read_input.o mpi_setup.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o zone_setup.o exch_qbc.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o syncs.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams sp-mz 4 B
+mpifort -c  -O3 -fopenmp sp.f
+mpifort -c  -O3 -fopenmp initialize.f
+mpifort -c  -O3 -fopenmp exact_solution.f
+mpifort -c  -O3 -fopenmp exact_rhs.f
+mpifort -c  -O3 -fopenmp set_constants.f
+mpifort -c  -O3 -fopenmp adi.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp x_solve.f
+mpifort -c  -O3 -fopenmp ninvr.f
+mpifort -c  -O3 -fopenmp y_solve.f
+mpifort -c  -O3 -fopenmp pinvr.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp z_solve.f
+mpifort -c  -O3 -fopenmp tzetar.f
+mpifort -c  -O3 -fopenmp add.f
+mpifort -c  -O3 -fopenmp txinvr.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+mpifort -O3 -fopenmp -o ../bin/sp-mz.B.4 sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o -lmpi
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams bt-mz 4 B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+mpifort -c  -O3 -fopenmp bt.f
+mpifort -c  -O3 -fopenmp initialize.f
+mpifort -c  -O3 -fopenmp exact_solution.f
+mpifort -c  -O3 -fopenmp exact_rhs.f
+mpifort -c  -O3 -fopenmp set_constants.f
+mpifort -c  -O3 -fopenmp adi.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp x_solve.f
+mpifort -c  -O3 -fopenmp y_solve.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp solve_subs.f
+mpifort -c  -O3 -fopenmp z_solve.f
+mpifort -c  -O3 -fopenmp add.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+mpifort -O3 -fopenmp -o ../bin/bt-mz.B.4 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+/bin/rm -f npbparams.h
+/bin/rm -f *.o *~
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams lu-mz 4 B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+mpifort -c  -O3 -fopenmp lu.f
+mpifort -c  -O3 -fopenmp read_input.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+mpifort -c  -O3 -fopenmp setcoeff.f
+mpifort -c  -O3 -fopenmp setbv.f
+mpifort -c  -O3 -fopenmp exact.f
+mpifort -c  -O3 -fopenmp setiv.f
+mpifort -c  -O3 -fopenmp erhs.f
+mpifort -c  -O3 -fopenmp ssor.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp l2norm.f
+mpifort -c  -O3 -fopenmp jacld.f
+mpifort -c  -O3 -fopenmp blts.f
+mpifort -c  -O3 -fopenmp jacu.f
+mpifort -c  -O3 -fopenmp buts.f
+mpifort -c  -O3 -fopenmp syncs.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp pintgr.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -O3 -fopenmp -o ../bin/lu-mz.B.4 lu.o read_input.o mpi_setup.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o zone_setup.o exch_qbc.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o syncs.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams sp-mz 8 B
+mpifort -c  -O3 -fopenmp sp.f
+mpifort -c  -O3 -fopenmp initialize.f
+mpifort -c  -O3 -fopenmp exact_solution.f
+mpifort -c  -O3 -fopenmp exact_rhs.f
+mpifort -c  -O3 -fopenmp set_constants.f
+mpifort -c  -O3 -fopenmp adi.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp x_solve.f
+mpifort -c  -O3 -fopenmp ninvr.f
+mpifort -c  -O3 -fopenmp y_solve.f
+mpifort -c  -O3 -fopenmp pinvr.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp z_solve.f
+mpifort -c  -O3 -fopenmp tzetar.f
+mpifort -c  -O3 -fopenmp add.f
+mpifort -c  -O3 -fopenmp txinvr.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+mpifort -O3 -fopenmp -o ../bin/sp-mz.B.8 sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o -lmpi
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams bt-mz 8 B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+mpifort -c  -O3 -fopenmp bt.f
+mpifort -c  -O3 -fopenmp initialize.f
+mpifort -c  -O3 -fopenmp exact_solution.f
+mpifort -c  -O3 -fopenmp exact_rhs.f
+mpifort -c  -O3 -fopenmp set_constants.f
+mpifort -c  -O3 -fopenmp adi.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp x_solve.f
+mpifort -c  -O3 -fopenmp y_solve.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp solve_subs.f
+mpifort -c  -O3 -fopenmp z_solve.f
+mpifort -c  -O3 -fopenmp add.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+mpifort -O3 -fopenmp -o ../bin/bt-mz.B.8 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+/bin/rm -f npbparams.h
+/bin/rm -f *.o *~
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams lu-mz 8 B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+mpifort -c  -O3 -fopenmp lu.f
+mpifort -c  -O3 -fopenmp read_input.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+mpifort -c  -O3 -fopenmp setcoeff.f
+mpifort -c  -O3 -fopenmp setbv.f
+mpifort -c  -O3 -fopenmp exact.f
+mpifort -c  -O3 -fopenmp setiv.f
+mpifort -c  -O3 -fopenmp erhs.f
+mpifort -c  -O3 -fopenmp ssor.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp l2norm.f
+mpifort -c  -O3 -fopenmp jacld.f
+mpifort -c  -O3 -fopenmp blts.f
+mpifort -c  -O3 -fopenmp jacu.f
+mpifort -c  -O3 -fopenmp buts.f
+mpifort -c  -O3 -fopenmp syncs.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp pintgr.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -O3 -fopenmp -o ../bin/lu-mz.B.8 lu.o read_input.o mpi_setup.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o zone_setup.o exch_qbc.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o syncs.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams sp-mz 12 B
+mpifort -c  -O3 -fopenmp sp.f
+mpifort -c  -O3 -fopenmp initialize.f
+mpifort -c  -O3 -fopenmp exact_solution.f
+mpifort -c  -O3 -fopenmp exact_rhs.f
+mpifort -c  -O3 -fopenmp set_constants.f
+mpifort -c  -O3 -fopenmp adi.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp x_solve.f
+mpifort -c  -O3 -fopenmp ninvr.f
+mpifort -c  -O3 -fopenmp y_solve.f
+mpifort -c  -O3 -fopenmp pinvr.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp z_solve.f
+mpifort -c  -O3 -fopenmp tzetar.f
+mpifort -c  -O3 -fopenmp add.f
+mpifort -c  -O3 -fopenmp txinvr.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+mpifort -O3 -fopenmp -o ../bin/sp-mz.B.12 sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o -lmpi
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams bt-mz 12 B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+mpifort -c  -O3 -fopenmp bt.f
+mpifort -c  -O3 -fopenmp initialize.f
+mpifort -c  -O3 -fopenmp exact_solution.f
+mpifort -c  -O3 -fopenmp exact_rhs.f
+mpifort -c  -O3 -fopenmp set_constants.f
+mpifort -c  -O3 -fopenmp adi.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp x_solve.f
+mpifort -c  -O3 -fopenmp y_solve.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp solve_subs.f
+mpifort -c  -O3 -fopenmp z_solve.f
+mpifort -c  -O3 -fopenmp add.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+mpifort -O3 -fopenmp -o ../bin/bt-mz.B.12 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+/bin/rm -f npbparams.h
+/bin/rm -f *.o *~
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams lu-mz 12 B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+mpifort -c  -O3 -fopenmp lu.f
+mpifort -c  -O3 -fopenmp read_input.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+mpifort -c  -O3 -fopenmp setcoeff.f
+mpifort -c  -O3 -fopenmp setbv.f
+mpifort -c  -O3 -fopenmp exact.f
+mpifort -c  -O3 -fopenmp setiv.f
+mpifort -c  -O3 -fopenmp erhs.f
+mpifort -c  -O3 -fopenmp ssor.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp l2norm.f
+mpifort -c  -O3 -fopenmp jacld.f
+mpifort -c  -O3 -fopenmp blts.f
+mpifort -c  -O3 -fopenmp jacu.f
+mpifort -c  -O3 -fopenmp buts.f
+mpifort -c  -O3 -fopenmp syncs.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp pintgr.f
+mpifort -c  -O3 -fopenmp verify.f
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams sp-mz 16 B
+mpifort -c  -O3 -fopenmp sp.f
+mpifort -c  -O3 -fopenmp initialize.f
+mpifort -c  -O3 -fopenmp exact_solution.f
+mpifort -c  -O3 -fopenmp exact_rhs.f
+mpifort -c  -O3 -fopenmp set_constants.f
+mpifort -c  -O3 -fopenmp adi.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp x_solve.f
+mpifort -c  -O3 -fopenmp ninvr.f
+mpifort -c  -O3 -fopenmp y_solve.f
+mpifort -c  -O3 -fopenmp pinvr.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp z_solve.f
+mpifort -c  -O3 -fopenmp tzetar.f
+mpifort -c  -O3 -fopenmp add.f
+mpifort -c  -O3 -fopenmp txinvr.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+cd ../common; mpifort -c  -O3 -fopenmp timers.f
+mpifort -O3 -fopenmp -o ../bin/sp-mz.B.16 sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o -lmpi
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams bt-mz 16 B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+mpifort -c  -O3 -fopenmp bt.f
+mpifort -c  -O3 -fopenmp initialize.f
+mpifort -c  -O3 -fopenmp exact_solution.f
+mpifort -c  -O3 -fopenmp exact_rhs.f
+mpifort -c  -O3 -fopenmp set_constants.f
+mpifort -c  -O3 -fopenmp adi.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp x_solve.f
+mpifort -c  -O3 -fopenmp y_solve.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp solve_subs.f
+mpifort -c  -O3 -fopenmp z_solve.f
+mpifort -c  -O3 -fopenmp add.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp verify.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+cd ../common; mpifort -c  -O3 -fopenmp print_results.f
+mpifort -O3 -fopenmp -o ../bin/bt-mz.B.16 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+/bin/rm -f npbparams.h
+/bin/rm -f *.o *~
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/sys'
+../sys/setparams lu-mz 16 B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+mpifort -c  -O3 -fopenmp lu.f
+mpifort -c  -O3 -fopenmp read_input.f
+mpifort -c  -O3 -fopenmp mpi_setup.f
+mpifort -c  -O3 -fopenmp setcoeff.f
+mpifort -c  -O3 -fopenmp setbv.f
+mpifort -c  -O3 -fopenmp exact.f
+mpifort -c  -O3 -fopenmp setiv.f
+mpifort -c  -O3 -fopenmp erhs.f
+mpifort -c  -O3 -fopenmp ssor.f
+mpifort -c  -O3 -fopenmp zone_setup.f
+mpifort -c  -O3 -fopenmp exch_qbc.f
+mpifort -c  -O3 -fopenmp rhs.f
+mpifort -c  -O3 -fopenmp l2norm.f
+mpifort -c  -O3 -fopenmp jacld.f
+mpifort -c  -O3 -fopenmp blts.f
+mpifort -c  -O3 -fopenmp jacu.f
+mpifort -c  -O3 -fopenmp buts.f
+mpifort -c  -O3 -fopenmp syncs.f
+mpifort -c  -O3 -fopenmp error.f
+mpifort -c  -O3 -fopenmp pintgr.f
+mpifort -c  -O3 -fopenmp verify.f
+cd ../common; mpifort -c  -O3 -fopenmp print_results.f
+mpifort -O3 -fopenmp -o ../bin/lu-mz.B.16 lu.o read_input.o mpi_setup.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o zone_setup.o exch_qbc.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o syncs.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -lmpi
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-MPI-gfortran/LU-MZ'
+2 processos
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:     64  ( 32.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7341950389475E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9578975016145E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3336244164441E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2365202312693E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    93.13
+ Total processes =                        2
+ Total threads   =                       64
+ Mop/s total     =                  3257.19
+ Mop/s/thread    =                    50.89
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:     64  ( 32.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7341950389475E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9578975016145E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3307729257053E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2365202312693E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    93.00
+ Total processes =                        2
+ Total threads   =                       64
+ Mop/s total     =                  3261.93
+ Mop/s/thread    =                    50.97
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:     64  ( 32.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7341950389475E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9578975016145E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3307729257053E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2365202312693E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    93.18
+ Total processes =                        2
+ Total threads   =                       64
+ Mop/s total     =                  3255.48
+ Mop/s/thread    =                    50.87
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:     64  ( 32.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7341950389475E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9578975016145E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2365202312693E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    93.10
+ Total processes =                        2
+ Total threads   =                       64
+ Mop/s total     =                  3258.19
+ Mop/s/thread    =                    50.91
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:     64  ( 32.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7341950389475E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9578975016145E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3321986710747E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2365202312693E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    93.07
+ Total processes =                        2
+ Total threads   =                       64
+ Mop/s total     =                  3259.35
+ Mop/s/thread    =                    50.93
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+4 processos
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     4
+
+ Use the default load factors with threads
+ Total number of threads:     64  ( 16.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7394518053361E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9610075584379E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1312540998577E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3324512224613E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    37.59
+ Total processes =                        4
+ Total threads   =                       64
+ Mop/s total     =                  8070.90
+ Mop/s/thread    =                   126.11
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     4
+
+ Use the default load factors with threads
+ Total number of threads:     64  ( 16.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7394518053361E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9610075584379E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3324512224613E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    37.79
+ Total processes =                        4
+ Total threads   =                       64
+ Mop/s total     =                  8027.36
+ Mop/s/thread    =                   125.43
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     4
+
+ Use the default load factors with threads
+ Total number of threads:     64  ( 16.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7394518053361E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9610075584379E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3324512224613E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    37.80
+ Total processes =                        4
+ Total threads   =                       64
+ Mop/s total     =                  8024.63
+ Mop/s/thread    =                   125.38
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     4
+
+ Use the default load factors with threads
+ Total number of threads:     64  ( 16.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7394518053361E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9610075584379E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1244328540102E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3324512224613E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    37.64
+ Total processes =                        4
+ Total threads   =                       64
+ Mop/s total     =                  8059.68
+ Mop/s/thread    =                   125.93
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     4
+
+ Use the default load factors with threads
+ Total number of threads:     64  ( 16.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7394518053361E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9610075584379E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1314343939509E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1242637876324E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3324512224613E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2372969807972E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    37.54
+ Total processes =                        4
+ Total threads   =                       64
+ Mop/s total     =                  8080.94
+ Mop/s/thread    =                   126.26
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+8 processos
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     8
+
+ Use the default load factors with threads
+ Total number of threads:     64  (  8.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7412040607990E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9594525300262E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1307132175781E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2673013389704E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1246019203879E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3350501618136E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3328520075396E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2363907730146E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1816903429278E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    17.10
+ Total processes =                        8
+ Total threads   =                       64
+ Mop/s total     =                 17737.33
+ Mop/s/thread    =                   277.15
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     8
+
+ Use the default load factors with threads
+ Total number of threads:     64  (  8.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7412040607990E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9594525300262E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1307132175781E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1246019203879E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3350501618136E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3328520075396E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2363907730146E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1816903429278E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    17.13
+ Total processes =                        8
+ Total threads   =                       64
+ Mop/s total     =                 17711.19
+ Mop/s/thread    =                   276.74
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     8
+
+ Use the default load factors with threads
+ Total number of threads:     64  (  8.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7412040607990E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9594525300262E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1307132175781E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1246019203879E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3350501618136E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3328520075396E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2363907730146E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1816903429278E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    17.24
+ Total processes =                        8
+ Total threads   =                       64
+ Mop/s total     =                 17600.63
+ Mop/s/thread    =                   275.01
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     8
+
+ Use the default load factors with threads
+ Total number of threads:     64  (  8.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7412040607990E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9594525300262E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1307132175781E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2671878833936E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1246019203879E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3350501618136E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3328520075396E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2363907730146E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1816903429278E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    17.04
+ Total processes =                        8
+ Total threads   =                       64
+ Mop/s total     =                 17801.39
+ Mop/s/thread    =                   278.15
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     8
+
+ Use the default load factors with threads
+ Total number of threads:     64  (  8.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7412040607990E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9594525300262E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1307132175781E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2673013389704E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1246019203879E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7025941131405E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3350501618136E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3328520075396E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2363907730146E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1816903429278E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    17.08
+ Total processes =                        8
+ Total threads   =                       64
+ Mop/s total     =                 17760.50
+ Mop/s/thread    =                   277.51
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+16 processos
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:    16
+
+ Use the default load factors with threads
+ Total number of threads:     64  (  4.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7429563162619E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1316146880441E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2673013389704E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1247709867656E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3407531432912E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3332527926180E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2367791477786E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    10.56
+ Total processes =                       16
+ Total threads   =                       64
+ Mop/s total     =                 28734.60
+ Mop/s/thread    =                   448.98
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:    16
+
+ Use the default load factors with threads
+ Total number of threads:     64  (  4.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7429563162619E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1316146880441E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2673013389704E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1249400531434E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3407531432912E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3332527926180E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2367791477786E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    10.54
+ Total processes =                       16
+ Total threads   =                       64
+ Mop/s total     =                 28781.34
+ Mop/s/thread    =                   449.71
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:    16
+
+ Use the default load factors with threads
+ Total number of threads:     64  (  4.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7429563162619E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1316146880441E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2673013389704E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1247709867656E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3407531432912E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3332527926180E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2367791477786E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    10.35
+ Total processes =                       16
+ Total threads   =                       64
+ Mop/s total     =                 29300.82
+ Mop/s/thread    =                   457.83
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:    16
+
+ Use the default load factors with threads
+ Total number of threads:     64  (  4.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7429563162619E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1316146880441E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2673013389704E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1249400531434E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3407531432912E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3332527926180E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2367791477786E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    10.57
+ Total processes =                       16
+ Total threads   =                       64
+ Mop/s total     =                 28706.34
+ Mop/s/thread    =                   448.54
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:    16
+
+ Use the default load factors with threads
+ Total number of threads:     64  (  4.0 threads/process)
+
+ Calculated speedup =     64.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7429563162619E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1316146880441E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2673013389704E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1249400531434E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3407531432912E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3332527926180E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2367791477786E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1815099155763E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    10.63
+ Total processes =                       16
+ Total threads   =                       64
+ Mop/s total     =                 28545.58
+ Mop/s/thread    =                   446.02
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Apr 2020
+
+ Compile options:
+    F77          = mpifort
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

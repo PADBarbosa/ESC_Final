@@ -1,0 +1,528 @@
+rm -f core 
+rm -f *~ */core */*~ */*.o */npbparams.h */*.obj */*.exe
+rm -f sys/setparams sys/makesuite sys/setparams.h
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/SP-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/SP-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/sys'
+../sys/setparams sp-mz B
+gfortran -c  -O3 sp.f
+gfortran -c  -O3 initialize.f
+gfortran -c  -O3 exact_solution.f
+gfortran -c  -O3 exact_rhs.f
+gfortran -c  -O3 set_constants.f
+gfortran -c  -O3 adi.f
+gfortran -c  -O3 rhs.f
+gfortran -c  -O3 zone_setup.f
+gfortran -c  -O3 x_solve.f
+gfortran -c  -O3 ninvr.f
+gfortran -c  -O3 y_solve.f
+gfortran -c  -O3 pinvr.f
+gfortran -c  -O3 exch_qbc.f
+gfortran -c  -O3 z_solve.f
+gfortran -c  -O3 tzetar.f
+gfortran -c  -O3 add.f
+gfortran -c  -O3 txinvr.f
+gfortran -c  -O3 error.f
+gfortran -c  -O3 verify.f
+cd ../common; gfortran -c  -O3 print_results.f
+cd ../common; gfortran -c  -O3 timers.f
+cd ../common; cc  -c  -O  -o wtime.o ../common/wtime.c
+gfortran -O3 -o ../bin/sp-mz.B.x sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/LU-MZ'
+/bin/rm -f npbparams.h
+/bin/rm -f *.o *~
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/LU-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/sys'
+../sys/setparams lu-mz B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/LU-MZ'
+gfortran -c  -O3 lu.f
+gfortran -c  -O3 read_input.f
+gfortran -c  -O3 setcoeff.f
+gfortran -c  -O3 setbv.f
+gfortran -c  -O3 exact.f
+gfortran -c  -O3 setiv.f
+gfortran -c  -O3 erhs.f
+gfortran -c  -O3 ssor.f
+gfortran -c  -O3 zone_setup.f
+gfortran -c  -O3 exch_qbc.f
+gfortran -c  -O3 rhs.f
+gfortran -c  -O3 l2norm.f
+gfortran -c  -O3 jacld.f
+gfortran -c  -O3 blts.f
+gfortran -c  -O3 jacu.f
+gfortran -c  -O3 buts.f
+gfortran -c  -O3 error.f
+gfortran -c  -O3 pintgr.f
+gfortran -c  -O3 verify.f
+gfortran -O3 -o ../bin/lu-mz.B.x lu.o read_input.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o zone_setup.o exch_qbc.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/LU-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/BT-MZ'
+rm -f *.o *~ mputil*
+rm -f  npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/BT-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/sys'
+../sys/setparams bt-mz B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/BT-MZ'
+gfortran -c  -O3 bt.f
+gfortran -c  -O3 initialize.f
+gfortran -c  -O3 exact_solution.f
+gfortran -c  -O3 exact_rhs.f
+gfortran -c  -O3 set_constants.f
+gfortran -c  -O3 adi.f
+gfortran -c  -O3 rhs.f
+gfortran -c  -O3 zone_setup.f
+gfortran -c  -O3 x_solve.f
+gfortran -c  -O3 y_solve.f
+gfortran -c  -O3 exch_qbc.f
+gfortran -c  -O3 z_solve.f
+gfortran -c  -O3 solve_subs.f
+gfortran -c  -O3 add.f
+gfortran -c  -O3 error.f
+gfortran -c  -O3 verify.f
+gfortran -O3 -o ../bin/bt-mz.B.x bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o   exch_qbc.o z_solve.o solve_subs.o add.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/BT-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/SP-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/SP-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/sys'
+../sys/setparams sp-mz A
+gfortran -c  -O3 sp.f
+gfortran -c  -O3 initialize.f
+gfortran -c  -O3 exact_solution.f
+gfortran -c  -O3 exact_rhs.f
+gfortran -c  -O3 set_constants.f
+gfortran -c  -O3 adi.f
+gfortran -c  -O3 rhs.f
+gfortran -c  -O3 zone_setup.f
+gfortran -c  -O3 x_solve.f
+gfortran -c  -O3 ninvr.f
+gfortran -c  -O3 y_solve.f
+gfortran -c  -O3 pinvr.f
+gfortran -c  -O3 exch_qbc.f
+gfortran -c  -O3 z_solve.f
+gfortran -c  -O3 tzetar.f
+gfortran -c  -O3 add.f
+gfortran -c  -O3 txinvr.f
+gfortran -c  -O3 error.f
+gfortran -c  -O3 verify.f
+gfortran -O3 -o ../bin/sp-mz.A.x sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/LU-MZ'
+/bin/rm -f npbparams.h
+/bin/rm -f *.o *~
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/LU-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/sys'
+../sys/setparams lu-mz A
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/LU-MZ'
+gfortran -c  -O3 lu.f
+gfortran -c  -O3 read_input.f
+gfortran -c  -O3 setcoeff.f
+gfortran -c  -O3 setbv.f
+gfortran -c  -O3 exact.f
+gfortran -c  -O3 setiv.f
+gfortran -c  -O3 erhs.f
+gfortran -c  -O3 ssor.f
+gfortran -c  -O3 zone_setup.f
+gfortran -c  -O3 exch_qbc.f
+gfortran -c  -O3 rhs.f
+gfortran -c  -O3 l2norm.f
+gfortran -c  -O3 jacld.f
+gfortran -c  -O3 blts.f
+gfortran -c  -O3 jacu.f
+gfortran -c  -O3 buts.f
+gfortran -c  -O3 error.f
+gfortran -c  -O3 pintgr.f
+gfortran -c  -O3 verify.f
+gfortran -O3 -o ../bin/lu-mz.A.x lu.o read_input.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o zone_setup.o exch_qbc.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/LU-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/BT-MZ'
+rm -f *.o *~ mputil*
+rm -f  npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/BT-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/sys'
+../sys/setparams bt-mz A
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/BT-MZ'
+gfortran -c  -O3 bt.f
+gfortran -c  -O3 initialize.f
+gfortran -c  -O3 exact_solution.f
+gfortran -c  -O3 exact_rhs.f
+gfortran -c  -O3 set_constants.f
+gfortran -c  -O3 adi.f
+gfortran -c  -O3 rhs.f
+gfortran -c  -O3 zone_setup.f
+gfortran -c  -O3 x_solve.f
+gfortran -c  -O3 y_solve.f
+gfortran -c  -O3 exch_qbc.f
+gfortran -c  -O3 z_solve.f
+gfortran -c  -O3 solve_subs.f
+gfortran -c  -O3 add.f
+gfortran -c  -O3 error.f
+gfortran -c  -O3 verify.f
+gfortran -O3 -o ../bin/bt-mz.A.x bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o   exch_qbc.o z_solve.o solve_subs.o add.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/BT-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-gfortran/BT-MZ'
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - LU Multi-Zone Serial Benchmark
+
+ Number of zones:   4 x   4
+ Iterations: 250    dt:   2.000000
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class B
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.1734656959567E+05 0.1734656959567E+05 0.2518776132203E-12
+           2   0.1238977748533E+04 0.1238977748533E+04 0.1409411774724E-12
+           3   0.4123885357100E+04 0.4123885357100E+04 0.7211761281572E-13
+           4   0.3613705834056E+04 0.3613705834056E+04 0.6568827903081E-13
+           5   0.3531187871586E+05 0.3531187871586E+05 0.5357259507232E-13
+ Comparison of RMS-norms of solution error
+           1   0.1781612313296E+04 0.1781612313296E+04 0.9150527534871E-13
+           2   0.1177971120769E+03 0.1177971120769E+03 0.3066628039443E-12
+           3   0.4233792871440E+03 0.4233792871440E+03 0.3007451288114E-13
+           4   0.3577260438230E+03 0.3577260438230E+03 0.6514986016635E-14
+           5   0.3659958544012E+04 0.3659958544012E+04 0.5541519557023E-13
+ Comparison of surface integral
+               0.6107041476456E+04 0.6107041476456E+04 0.6091056274289E-13
+ Verification Successful
+
+
+ LU-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      250
+ Time in seconds =                   147.94
+ Mop/s total     =                  3034.54
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              11 Apr 2020
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3
+    FLINKFLAGS   = -O3
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - LU Multi-Zone Serial Benchmark
+
+ Number of zones:   4 x   4
+ Iterations: 250    dt:   2.000000
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class B
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.1734656959567E+05 0.1734656959567E+05 0.2518776132203E-12
+           2   0.1238977748533E+04 0.1238977748533E+04 0.1409411774724E-12
+           3   0.4123885357100E+04 0.4123885357100E+04 0.7211761281572E-13
+           4   0.3613705834056E+04 0.3613705834056E+04 0.6568827903081E-13
+           5   0.3531187871586E+05 0.3531187871586E+05 0.5357259507232E-13
+ Comparison of RMS-norms of solution error
+           1   0.1781612313296E+04 0.1781612313296E+04 0.9150527534871E-13
+           2   0.1177971120769E+03 0.1177971120769E+03 0.3066628039443E-12
+           3   0.4233792871440E+03 0.4233792871440E+03 0.3007451288114E-13
+           4   0.3577260438230E+03 0.3577260438230E+03 0.6514986016635E-14
+           5   0.3659958544012E+04 0.3659958544012E+04 0.5541519557023E-13
+ Comparison of surface integral
+               0.6107041476456E+04 0.6107041476456E+04 0.6091056274289E-13
+ Verification Successful
+
+
+ LU-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      250
+ Time in seconds =                   146.97
+ Mop/s total     =                  3054.50
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              11 Apr 2020
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3
+    FLINKFLAGS   = -O3
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - LU Multi-Zone Serial Benchmark
+
+ Number of zones:   4 x   4
+ Iterations: 250    dt:   2.000000
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class B
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.1734656959567E+05 0.1734656959567E+05 0.2518776132203E-12
+           2   0.1238977748533E+04 0.1238977748533E+04 0.1409411774724E-12
+           3   0.4123885357100E+04 0.4123885357100E+04 0.7211761281572E-13
+           4   0.3613705834056E+04 0.3613705834056E+04 0.6568827903081E-13
+           5   0.3531187871586E+05 0.3531187871586E+05 0.5357259507232E-13
+ Comparison of RMS-norms of solution error
+           1   0.1781612313296E+04 0.1781612313296E+04 0.9150527534871E-13
+           2   0.1177971120769E+03 0.1177971120769E+03 0.3066628039443E-12
+           3   0.4233792871440E+03 0.4233792871440E+03 0.3007451288114E-13
+           4   0.3577260438230E+03 0.3577260438230E+03 0.6514986016635E-14
+           5   0.3659958544012E+04 0.3659958544012E+04 0.5541519557023E-13
+ Comparison of surface integral
+               0.6107041476456E+04 0.6107041476456E+04 0.6091056274289E-13
+ Verification Successful
+
+
+ LU-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      250
+ Time in seconds =                   149.03
+ Mop/s total     =                  3012.23
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              11 Apr 2020
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3
+    FLINKFLAGS   = -O3
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - LU Multi-Zone Serial Benchmark
+
+ Number of zones:   4 x   4
+ Iterations: 250    dt:   2.000000
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class B
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.1734656959567E+05 0.1734656959567E+05 0.2518776132203E-12
+           2   0.1238977748533E+04 0.1238977748533E+04 0.1409411774724E-12
+           3   0.4123885357100E+04 0.4123885357100E+04 0.7211761281572E-13
+           4   0.3613705834056E+04 0.3613705834056E+04 0.6568827903081E-13
+           5   0.3531187871586E+05 0.3531187871586E+05 0.5357259507232E-13
+ Comparison of RMS-norms of solution error
+           1   0.1781612313296E+04 0.1781612313296E+04 0.9150527534871E-13
+           2   0.1177971120769E+03 0.1177971120769E+03 0.3066628039443E-12
+           3   0.4233792871440E+03 0.4233792871440E+03 0.3007451288114E-13
+           4   0.3577260438230E+03 0.3577260438230E+03 0.6514986016635E-14
+           5   0.3659958544012E+04 0.3659958544012E+04 0.5541519557023E-13
+ Comparison of surface integral
+               0.6107041476456E+04 0.6107041476456E+04 0.6091056274289E-13
+ Verification Successful
+
+
+ LU-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      250
+ Time in seconds =                   148.65
+ Mop/s total     =                  3019.90
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              11 Apr 2020
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3
+    FLINKFLAGS   = -O3
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - LU Multi-Zone Serial Benchmark
+
+ Number of zones:   4 x   4
+ Iterations: 250    dt:   2.000000
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class B
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.1734656959567E+05 0.1734656959567E+05 0.2518776132203E-12
+           2   0.1238977748533E+04 0.1238977748533E+04 0.1409411774724E-12
+           3   0.4123885357100E+04 0.4123885357100E+04 0.7211761281572E-13
+           4   0.3613705834056E+04 0.3613705834056E+04 0.6568827903081E-13
+           5   0.3531187871586E+05 0.3531187871586E+05 0.5357259507232E-13
+ Comparison of RMS-norms of solution error
+           1   0.1781612313296E+04 0.1781612313296E+04 0.9150527534871E-13
+           2   0.1177971120769E+03 0.1177971120769E+03 0.3066628039443E-12
+           3   0.4233792871440E+03 0.4233792871440E+03 0.3007451288114E-13
+           4   0.3577260438230E+03 0.3577260438230E+03 0.6514986016635E-14
+           5   0.3659958544012E+04 0.3659958544012E+04 0.5541519557023E-13
+ Comparison of surface integral
+               0.6107041476456E+04 0.6107041476456E+04 0.6091056274289E-13
+ Verification Successful
+
+
+ LU-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      250
+ Time in seconds =                   146.99
+ Mop/s total     =                  3054.03
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              11 Apr 2020
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3
+    FLINKFLAGS   = -O3
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

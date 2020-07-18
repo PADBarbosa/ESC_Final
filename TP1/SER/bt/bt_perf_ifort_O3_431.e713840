@@ -1,0 +1,85 @@
+
+ Performance counter stats for './bin/bt-mz.B.x':
+
+     194138.515249      task-clock (msec)         #    0.999 CPUs utilized          
+             19560      context-switches          #    0.101 K/sec                  
+                 2      cpu-migrations            #    0.000 K/sec                  
+               651      page-faults               #    0.003 K/sec                  
+      565961852848      cycles                    #    2.915 GHz                     [83.34%]
+      195911701699      stalled-cycles-frontend   #   34.62% frontend cycles idle    [83.33%]
+       43493566338      stalled-cycles-backend    #    7.68% backend  cycles idle    [66.67%]
+     1106042687187      instructions              #    1.95  insns per cycle        
+                                                  #    0.18  stalled cycles per insn [83.33%]
+       16400434237      branches                  #   84.478 M/sec                   [83.33%]
+          62412579      branch-misses             #    0.38% of all branches         [83.33%]
+
+     194.376684238 seconds time elapsed
+
+
+ Performance counter stats for './bin/bt-mz.B.x':
+
+     193234.814160      task-clock (msec)         #    0.999 CPUs utilized          
+             19594      context-switches          #    0.101 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               650      page-faults               #    0.003 K/sec                  
+      563182831186      cycles                    #    2.914 GHz                     [83.33%]
+      193407951741      stalled-cycles-frontend   #   34.34% frontend cycles idle    [83.34%]
+       41532098983      stalled-cycles-backend    #    7.37% backend  cycles idle    [66.67%]
+     1105878382992      instructions              #    1.96  insns per cycle        
+                                                  #    0.17  stalled cycles per insn [83.34%]
+       16401160186      branches                  #   84.877 M/sec                   [83.32%]
+          63085749      branch-misses             #    0.38% of all branches         [83.34%]
+
+     193.473744739 seconds time elapsed
+
+
+ Performance counter stats for './bin/bt-mz.B.x':
+
+     193365.154071      task-clock (msec)         #    0.999 CPUs utilized          
+             19470      context-switches          #    0.101 K/sec                  
+                 2      cpu-migrations            #    0.000 K/sec                  
+               652      page-faults               #    0.003 K/sec                  
+      563623519964      cycles                    #    2.915 GHz                     [83.33%]
+      193550901874      stalled-cycles-frontend   #   34.34% frontend cycles idle    [83.34%]
+       41428812583      stalled-cycles-backend    #    7.35% backend  cycles idle    [66.67%]
+     1105606689061      instructions              #    1.96  insns per cycle        
+                                                  #    0.18  stalled cycles per insn [83.34%]
+       16411213510      branches                  #   84.872 M/sec                   [83.32%]
+          60609842      branch-misses             #    0.37% of all branches         [83.34%]
+
+     193.601851093 seconds time elapsed
+
+
+ Performance counter stats for './bin/bt-mz.B.x':
+
+     194717.964052      task-clock (msec)         #    0.999 CPUs utilized          
+             19730      context-switches          #    0.101 K/sec                  
+                 2      cpu-migrations            #    0.000 K/sec                  
+               651      page-faults               #    0.003 K/sec                  
+      567531012947      cycles                    #    2.915 GHz                     [83.33%]
+      197385165789      stalled-cycles-frontend   #   34.78% frontend cycles idle    [83.34%]
+       41883704050      stalled-cycles-backend    #    7.38% backend  cycles idle    [66.67%]
+     1105923297474      instructions              #    1.95  insns per cycle        
+                                                  #    0.18  stalled cycles per insn [83.34%]
+       16408832172      branches                  #   84.270 M/sec                   [83.32%]
+          62619849      branch-misses             #    0.38% of all branches         [83.34%]
+
+     194.958292716 seconds time elapsed
+
+
+ Performance counter stats for './bin/bt-mz.B.x':
+
+     194819.912062      task-clock (msec)         #    0.999 CPUs utilized          
+             19744      context-switches          #    0.101 K/sec                  
+                 1      cpu-migrations            #    0.000 K/sec                  
+               651      page-faults               #    0.003 K/sec                  
+      567910284136      cycles                    #    2.915 GHz                     [83.34%]
+      197706804352      stalled-cycles-frontend   #   34.81% frontend cycles idle    [83.33%]
+       43307915574      stalled-cycles-backend    #    7.63% backend  cycles idle    [66.67%]
+     1105451893135      instructions              #    1.95  insns per cycle        
+                                                  #    0.18  stalled cycles per insn [83.33%]
+       16417284915      branches                  #   84.269 M/sec                   [83.34%]
+          62761456      branch-misses             #    0.38% of all branches         [83.33%]
+
+     195.061625428 seconds time elapsed
+

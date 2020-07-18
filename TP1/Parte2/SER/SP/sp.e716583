@@ -1,0 +1,42 @@
+make[1]: Warning: File `npbparams.h' has modification time 0.0052 s in the future
+ipo: warning #11003: no IR in object file ../common/wtime.o; was the source file compiled with -ipo
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+ipo: warning #11003: no IR in object file ../common/wtime.o; was the source file compiled with -ipo
+ipo: warning #11003: no IR in object file ../common/wtime.o; was the source file compiled with -ipo
+make[1]: Warning: File `npbparams.h' has modification time 0.0051 s in the future
+ipo: warning #11003: no IR in object file ../common/wtime.o; was the source file compiled with -ipo
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+ipo: warning #11003: no IR in object file ../common/wtime.o; was the source file compiled with -ipo
+ipo: warning #11003: no IR in object file ../common/wtime.o; was the source file compiled with -ipo
+make[1]: Warning: File `npbparams.h' has modification time 0.0052 s in the future
+ipo: warning #11003: no IR in object file ../common/wtime.o; was the source file compiled with -ipo
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+ipo: warning #11003: no IR in object file ../common/wtime.o; was the source file compiled with -ipo
+ipo: warning #11003: no IR in object file ../common/wtime.o; was the source file compiled with -ipo
+[1]   Running                 mpstat -P ALL 1 > PT2/mpstat_sp_A.txt &
+[2]   Running                 vmstat 1 > PT2/vmstat_sp__A.txt &
+[3]-  Running                 iostat -mdx 1 > PT2/iostat_sp_A.txt &
+[4]+  Running                 free -m -s 1 > PT2/free_sp_A.txt &
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 25: kill: %5: no such job
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 28: 11811 Terminated              mpstat -P ALL 1 > PT2/mpstat_sp_A.txt
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 28: 11812 Terminated              vmstat 1 > PT2/vmstat_sp__A.txt
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 28: 11813 Terminated              iostat -mdx 1 > PT2/iostat_sp_A.txt
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 28: 11814 Terminated              free -m -s 1 > PT2/free_sp_A.txt
+[1]   Running                 mpstat -P ALL 1 > PT2/mpstat_sp_B.txt &
+[2]   Running                 vmstat 1 > PT2/vmstat_sp__B.txt &
+[3]-  Running                 iostat -mdx 1 > PT2/iostat_sp_B.txt &
+[4]+  Running                 free -m -s 1 > PT2/free_sp_B.txt &
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 49: kill: %5: no such job
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 52: 11817 Terminated              mpstat -P ALL 1 > PT2/mpstat_sp_B.txt
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 52: 11818 Terminated              vmstat 1 > PT2/vmstat_sp__B.txt
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 52: 11819 Terminated              iostat -mdx 1 > PT2/iostat_sp_B.txt
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 52: 11820 Terminated              free -m -s 1 > PT2/free_sp_B.txt
+[1]   Running                 mpstat -P ALL 1 > PT2/mpstat_sp_C.txt &
+[2]   Running                 vmstat 1 > PT2/vmstat_sp__C.txt &
+[3]-  Running                 iostat -mdx 1 > PT2/iostat_sp_C.txt &
+[4]+  Running                 free -m -s 1 > PT2/free_sp_C.txt &
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 73: kill: %5: no such job
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 76: 11825 Terminated              mpstat -P ALL 1 > PT2/mpstat_sp_C.txt
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 76: 11827 Terminated              iostat -mdx 1 > PT2/iostat_sp_C.txt
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 76: 11826 Terminated              vmstat 1 > PT2/vmstat_sp__C.txt
+/var/spool/torque/mom_priv/jobs/716583.search6.di.uminho.pt.SC: line 76: 11828 Terminated              free -m -s 1 > PT2/free_sp_C.txt

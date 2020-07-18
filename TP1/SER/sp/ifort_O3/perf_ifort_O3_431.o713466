@@ -1,0 +1,548 @@
+rm -f core 
+rm -f *~ */core */*~ */*.o */npbparams.h */*.obj */*.exe
+rm -f sys/setparams sys/makesuite sys/setparams.h
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/SP-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/SP-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/sys'
+../sys/setparams sp-mz B
+ifort -c  -O3 sp.f
+ifort -c  -O3 initialize.f
+ifort -c  -O3 exact_solution.f
+ifort -c  -O3 exact_rhs.f
+ifort -c  -O3 set_constants.f
+ifort -c  -O3 adi.f
+ifort -c  -O3 rhs.f
+ifort -c  -O3 zone_setup.f
+ifort -c  -O3 x_solve.f
+ifort -c  -O3 ninvr.f
+ifort -c  -O3 y_solve.f
+ifort -c  -O3 pinvr.f
+ifort -c  -O3 exch_qbc.f
+ifort -c  -O3 z_solve.f
+ifort -c  -O3 tzetar.f
+ifort -c  -O3 add.f
+ifort -c  -O3 txinvr.f
+ifort -c  -O3 error.f
+ifort -c  -O3 verify.f
+cd ../common; ifort -c  -O3 print_results.f
+cd ../common; ifort -c  -O3 timers.f
+cd ../common; cc  -c  -O  -o wtime.o ../common/wtime.c
+ifort -O3 -o ../bin/sp-mz.B.x sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/LU-MZ'
+/bin/rm -f npbparams.h
+/bin/rm -f *.o *~
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/LU-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/sys'
+../sys/setparams lu-mz B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/LU-MZ'
+ifort -c  -O3 lu.f
+ifort -c  -O3 read_input.f
+ifort -c  -O3 setcoeff.f
+ifort -c  -O3 setbv.f
+ifort -c  -O3 exact.f
+ifort -c  -O3 setiv.f
+ifort -c  -O3 erhs.f
+ifort -c  -O3 ssor.f
+ifort -c  -O3 zone_setup.f
+ifort -c  -O3 exch_qbc.f
+ifort -c  -O3 rhs.f
+ifort -c  -O3 l2norm.f
+ifort -c  -O3 jacld.f
+ifort -c  -O3 blts.f
+ifort -c  -O3 jacu.f
+ifort -c  -O3 buts.f
+ifort -c  -O3 error.f
+ifort -c  -O3 pintgr.f
+ifort -c  -O3 verify.f
+ifort -O3 -o ../bin/lu-mz.B.x lu.o read_input.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o zone_setup.o exch_qbc.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/LU-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/BT-MZ'
+rm -f *.o *~ mputil*
+rm -f  npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/BT-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/sys'
+../sys/setparams bt-mz B
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/BT-MZ'
+ifort -c  -O3 bt.f
+ifort -c  -O3 initialize.f
+ifort -c  -O3 exact_solution.f
+ifort -c  -O3 exact_rhs.f
+ifort -c  -O3 set_constants.f
+ifort -c  -O3 adi.f
+ifort -c  -O3 rhs.f
+ifort -c  -O3 zone_setup.f
+ifort -c  -O3 x_solve.f
+ifort -c  -O3 y_solve.f
+ifort -c  -O3 exch_qbc.f
+ifort -c  -O3 z_solve.f
+ifort -c  -O3 solve_subs.f
+ifort -c  -O3 add.f
+ifort -c  -O3 error.f
+ifort -c  -O3 verify.f
+ifort -O3 -o ../bin/bt-mz.B.x bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o   exch_qbc.o z_solve.o solve_subs.o add.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/BT-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/SP-MZ'
+rm -f *.o *~ mputil*
+rm -f npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/SP-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/sys'
+../sys/setparams sp-mz A
+ifort -c  -O3 sp.f
+ifort -c  -O3 initialize.f
+ifort -c  -O3 exact_solution.f
+ifort -c  -O3 exact_rhs.f
+ifort -c  -O3 set_constants.f
+ifort -c  -O3 adi.f
+ifort -c  -O3 rhs.f
+ifort -c  -O3 zone_setup.f
+ifort -c  -O3 x_solve.f
+ifort -c  -O3 ninvr.f
+ifort -c  -O3 y_solve.f
+ifort -c  -O3 pinvr.f
+ifort -c  -O3 exch_qbc.f
+ifort -c  -O3 z_solve.f
+ifort -c  -O3 tzetar.f
+ifort -c  -O3 add.f
+ifort -c  -O3 txinvr.f
+ifort -c  -O3 error.f
+ifort -c  -O3 verify.f
+ifort -O3 -o ../bin/sp-mz.A.x sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/SP-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/LU-MZ'
+/bin/rm -f npbparams.h
+/bin/rm -f *.o *~
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/LU-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/sys'
+../sys/setparams lu-mz A
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/LU-MZ'
+ifort -c  -O3 lu.f
+ifort -c  -O3 read_input.f
+ifort -c  -O3 setcoeff.f
+ifort -c  -O3 setbv.f
+ifort -c  -O3 exact.f
+ifort -c  -O3 setiv.f
+ifort -c  -O3 erhs.f
+ifort -c  -O3 ssor.f
+ifort -c  -O3 zone_setup.f
+ifort -c  -O3 exch_qbc.f
+ifort -c  -O3 rhs.f
+ifort -c  -O3 l2norm.f
+ifort -c  -O3 jacld.f
+ifort -c  -O3 blts.f
+ifort -c  -O3 jacu.f
+ifort -c  -O3 buts.f
+ifort -c  -O3 error.f
+ifort -c  -O3 pintgr.f
+ifort -c  -O3 verify.f
+ifort -O3 -o ../bin/lu-mz.A.x lu.o read_input.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o zone_setup.o exch_qbc.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/LU-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/LU-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/BT-MZ'
+rm -f *.o *~ mputil*
+rm -f  npbparams.h core
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/BT-MZ'
+make[1]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/BT-MZ'
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/sys'
+../sys/setparams bt-mz A
+make[2]: Entering directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/BT-MZ'
+ifort -c  -O3 bt.f
+ifort -c  -O3 initialize.f
+ifort -c  -O3 exact_solution.f
+ifort -c  -O3 exact_rhs.f
+ifort -c  -O3 set_constants.f
+ifort -c  -O3 adi.f
+ifort -c  -O3 rhs.f
+ifort -c  -O3 zone_setup.f
+ifort -c  -O3 x_solve.f
+ifort -c  -O3 y_solve.f
+ifort -c  -O3 exch_qbc.f
+ifort -c  -O3 z_solve.f
+ifort -c  -O3 solve_subs.f
+ifort -c  -O3 add.f
+ifort -c  -O3 error.f
+ifort -c  -O3 verify.f
+ifort -O3 -o ../bin/bt-mz.A.x bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o   exch_qbc.o z_solve.o solve_subs.o add.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/BT-MZ'
+make[1]: Leaving directory `/home/a82068/EngSisComp/NPB3.3.1-MZ/NPB3.3-MZ-SER-O3-ifort/BT-MZ'
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - SP Multi-Zone Serial Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7306905280217E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1323358644170E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2668475166631E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1257853850320E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.6963580707162E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3179412173805E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2352256487226E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1818707702793E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                   112.93
+ Mop/s total     =                  2686.23
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              10 Apr 2020
+
+ Compile options:
+    F77          = ifort
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3
+    FLINKFLAGS   = -O3
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - SP Multi-Zone Serial Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7306905280217E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1323358644170E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2668475166631E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1257853850320E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.6963580707162E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3179412173805E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2352256487226E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1818707702793E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                   113.48
+ Mop/s total     =                  2673.20
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              10 Apr 2020
+
+ Compile options:
+    F77          = ifort
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3
+    FLINKFLAGS   = -O3
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - SP Multi-Zone Serial Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7306905280217E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1323358644170E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2668475166631E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1257853850320E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.6963580707162E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3179412173805E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2352256487226E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1818707702793E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                   113.20
+ Mop/s total     =                  2679.77
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              10 Apr 2020
+
+ Compile options:
+    F77          = ifort
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3
+    FLINKFLAGS   = -O3
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - SP Multi-Zone Serial Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7306905280217E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1323358644170E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2668475166631E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1257853850320E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.6963580707162E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3179412173805E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2352256487226E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1818707702793E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                   112.66
+ Mop/s total     =                  2692.67
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              10 Apr 2020
+
+ Compile options:
+    F77          = ifort
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3
+    FLINKFLAGS   = -O3
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-SER) - SP Multi-Zone Serial Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7306905280217E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1323358644170E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2668475166631E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1257853850320E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.6963580707162E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3179412173805E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3322508299222E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2352256487226E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1818707702793E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                   113.24
+ Mop/s total     =                  2678.87
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              10 Apr 2020
+
+ Compile options:
+    F77          = ifort
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3
+    FLINKFLAGS   = -O3
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

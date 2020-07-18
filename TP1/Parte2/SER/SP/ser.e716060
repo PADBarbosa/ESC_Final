@@ -1,0 +1,17 @@
+[1]   Running                 mpstat -P ALL 2 > PT2/mpstat_sp_641_ifort_A.txt &
+[2]-  Running                 vmstat 2 > PT2/vmstat_sp_641_ifort_A.txt &
+[3]+  Running                 iostat -d 2 > PT2/iostat_sp_641_ifort_A.txt &
+/var/spool/torque/mom_priv/jobs/716060.search6.di.uminho.pt.SC: line 22:  7136 Terminated              mpstat -P ALL 2 > PT2/mpstat_sp_641_ifort_A.txt
+/var/spool/torque/mom_priv/jobs/716060.search6.di.uminho.pt.SC: line 22:  7138 Terminated              iostat -d 2 > PT2/iostat_sp_641_ifort_A.txt
+[1]   Running                 mpstat -P ALL 2 > PT2/mpstat_sp_641_ifort_B.txt &
+[2]-  Running                 vmstat 2 > PT2/vmstat_sp_641_ifort_B.txt &
+[3]+  Running                 iostat -d 2 > PT2/iostat_sp_641_ifort_B.txt &
+/var/spool/torque/mom_priv/jobs/716060.search6.di.uminho.pt.SC: line 40:  7141 Terminated              mpstat -P ALL 2 > PT2/mpstat_sp_641_ifort_B.txt
+/var/spool/torque/mom_priv/jobs/716060.search6.di.uminho.pt.SC: line 40:  7142 Terminated              vmstat 2 > PT2/vmstat_sp_641_ifort_B.txt
+/var/spool/torque/mom_priv/jobs/716060.search6.di.uminho.pt.SC: line 41:  7143 Terminated              iostat -d 2 > PT2/iostat_sp_641_ifort_B.txt
+[1]   Running                 mpstat -P ALL 2 > PT2/mpstat_sp_641_ifort_C.txt &
+[2]-  Running                 vmstat 2 > PT2/vmstat_sp_641_ifort_C.txt &
+[3]+  Running                 iostat -d 2 > PT2/iostat_sp_641_ifort_C.txt &
+/var/spool/torque/mom_priv/jobs/716060.search6.di.uminho.pt.SC: line 58:  7146 Terminated              mpstat -P ALL 2 > PT2/mpstat_sp_641_ifort_C.txt
+/var/spool/torque/mom_priv/jobs/716060.search6.di.uminho.pt.SC: line 58:  7147 Terminated              vmstat 2 > PT2/vmstat_sp_641_ifort_C.txt
+/var/spool/torque/mom_priv/jobs/716060.search6.di.uminho.pt.SC: line 58:  7148 Terminated              iostat -d 2 > PT2/iostat_sp_641_ifort_C.txt
